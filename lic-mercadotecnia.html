@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EAV</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189911770-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-189911770-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '404249573788427');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=404249573788427&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5971de0086.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!---TIDIO------>
+  <script src="//code.tidio.co/8wwajboqwkkwhbirnokyo3ebst7bsruc.js" async></script>
+  <!---TIDIO------>
+
+</head>
+
+<body>
+
+  <header class="navigation">
+
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white navbar-primary">
+
+      <a class="navbar-brand py-0" href="index.html"><img class="logo-image" id="logo" src="images/logo-prueba.png" alt=""></a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i id="toggle-bars" class="fas fa-bars" style="color:#007bff; font-size:28px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Acerca de
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="filosofia.html">Filosofia Institucional</a></li>
+              <li><a class="dropdown-item" href="instalaciones.html">Instalaciones</a></li>
+        <!----      <a class="dropdown-item" href="directorio.html">Directorio</a> ------>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Normatividad Institucional</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="reglamento-general-universitario.html">Reglamento General Universitario</a></li>
+                  <li><a class="dropdown-item" href="aprendizaje-modelo-hibrido.html">Aprendizaje en Modelo Híbrido</a></li>
+                  <li><a class="dropdown-item" href="reglamento-operacion-educacion-linea.html">Reglas de Operación de Educación en Línea</a></li>
+                  <li><a class="dropdown-item" href="reglamento-interno-personal-aeronautico.html">Reglamento Interno para Personal Técnico Aeronáutico</a></li>
+                  <li><a class="dropdown-item" href="manual-practica-vuelo.html">Manual de Prácticas de Vuelo Real y Simulado</a></li>
+                  <li><a class="dropdown-item" href="lineamientos-generales-funcion-docente.html">Lineamientos Genrales de la Función Docente</a></li>
+                  <li><a class="dropdown-item" href="reglamento-alumno.html">Reglamento del Alumno</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Oferta Académica
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="TSU.html">Técnico Superior Universitario (TSU)</a></li>
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Licenciaturas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="LASGA.html">LASGA</a></li>
+                  <li><a class="dropdown-item" href="lic-administracion.html">Administración</a></li>
+                  <li><a class="dropdown-item" href="lic-comercio-int.html">Comercio Internacional</a></li>
+                  <li><a class="dropdown-item" href="lic-derecho.html">Derecho</a></li>
+                  <li><a class="dropdown-item" href="lic-educacion.html">Educación</a></li>
+                  <li><a class="dropdown-item" href="lic-mercadotecnia.html">Mercadotecnia</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="maestrias.html">Maestrias</a></li>
+              <li><a class="dropdown-item" href="especialidades.html">Especialidades</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Carreras Técnicas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="curso-mantenimiento.html">Técnico en Mantenimiento</a>
+              <a class="dropdown-item" href="curso-oficialoperaciones.html">Oficial de Operaciones</a>
+              <a class="dropdown-item" href="curso-sobrecargo.html">Curso de Sobrecargo</a>
+              <a class="dropdown-item" href="curso-pilotopalafija.html">Piloto Privado Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotopalarotativa.html">Piloto Privado Ala Rotativa</a>
+              <a class="dropdown-item" href="curso-pilotocalafija.html">Piloto Comercial Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotocalarotativa.html">Piloto Comercial Ala Rotativa</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="campus.html">Campus</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios Escolares
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="servicio-social.html">Servicio Social</a>
+              <a class="dropdown-item" href="practicas.html">Prácticas</a>
+              <a class="dropdown-item" href="titulacion.html">Titulación</a>
+              <a class="dropdown-item" href="calendario.html">Calendario Escolar</a>
+              <a class="dropdown-item" href="colaboraciones.html">Colaboraciones</a>
+          <!----    <a class="dropdown-item" href="faq.html">Calificaciones</a> ----->
+              <a class="dropdown-item" href="becas.html">Becas</a>
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+            </div>
+          </li>
+      <!---    <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Trámites
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pagos.html">Pagos</a>
+              <a class="dropdown-item" href="pagos.html">Facturas</a>
+              <a class="dropdown-item" href="pagos.html">Constancias</a>
+            </div>
+          </li> ------>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="http://eav-superiores.com/moodle/">Plataforma Online</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!--Nav Bar-->
+
+  </header>
+
+
+  <section>
+    <div class="container-fluid container-xl fixed-bg-licenciatura">
+      <div class="container-fluid encuentra-titulo container-xl updownspace animated animatedFadeInUp fadeInUp">
+        <h5 style="color: white;  padding-top: 10%;">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h5>
+        <h1 style="color: white;"><b>Mercadotecnia</b></h1>
+        <h3 style="color: white;">RVOE 20180014</h3>
+      </div>
+    </div>
+
+  </section>
+
+
+<section id="">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 rightlefttspace">
+
+
+
+        <br>
+        <img src="images/carrerasstripe.png" alt="" width="100%">
+
+        <br><br><br>
+
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link" id="nav-home2-tab" data-toggle="tab" href="#nav-home2" role="tab" aria-controls="nav-home2" aria-selected="false">
+                <li>
+                  <img src="images/lapiz.png" alt="" width="20%">
+                </li>
+                Objetivo
+              </a>
+
+              <a class="nav-item nav-link" id="nav-profile2-tab" data-toggle="tab" href="#nav-profile2" role="tab" aria-controls="nav-profile2" aria-selected="false">
+                <li>
+                  <img src="images/perfili.png" alt="" width="20%">
+                </li>
+                Perfil de Ingreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-contact2-tab" data-toggle="tab" href="#nav-contact2" role="tab" aria-controls="nav-contact2" aria-selected="false">
+                <li>
+                  <img src="images/perfile.png" alt="" width="20%">
+                </li>
+                Perfil de Egreso
+              </a>
+
+              <a class="nav-item nav-link active" id="nav-perfil2-tab" data-toggle="tab" href="#nav-perfil2" role="tab" aria-controls="nav-perfil2" aria-selected="true">
+                <li>
+                  <img src="images/plan.png" alt="" width="20%">
+                </li>
+                Plan de Estudios
+              </a>
+
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+
+            <div class="tab-pane fade" id="nav-home2" role="tabpanel" aria-labelledby="nav-home2-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: #044972; text-align: justify;">
+                    Formar profesionales altamente capacitados
+                    en las áreas de Mercadotecnia para crear,
+                    comunicar, distribuir e intercambiar
+                    productos y/o servicios que tengan valor
+                    para los consumidores, por medio de una
+                    sólida preparación en la investigación e
+                    inteligencia de mercados, que favorezcan la
+                    creación, innovación y ventas de productos
+                    que propicie el éxito de los sectores
+                    empresariales y sociales con un alto valor
+                    ético.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile2-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    PERFIL DE INGRESO
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Facilidad de expresión verbal.
+                    <br><br>
+                    <b>></b> Habilidades para el pensamiento crítico,
+                    analítico y reflexivo.
+                    <br><br>
+                    <b>></b> Disposición para las relaciones
+                    interpersonales.
+                    <br><br>
+                    <b>></b> Habilidades de negociación y solución de
+                    conflictos.
+                    <br><br>
+                    <b>></b> Poseer un espíritu emprendedor y de servicio
+                    a la Sociedad, además de interés por el
+                    comercio, los sistemas y técnicas
+                    administrativas, que le permitan comprender el
+                    funcionamiento de los mercados.
+                    <br><br>
+                    <b>></b> Realiza actividades de forma organizada.
+                    <br><br>
+                    <b>></b> Interés por aspectos relacionados con el
+                    mundo de la Mercadotecnia.
+                    <br><br>
+                    <b>></b> Capacidad de concentración y atención.
+                    <br><br>
+                    <b>></b> Facilidad para el trato con el público.
+                  </p>
+                  <br><br>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab">
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CONOCIMIENTOS:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Planear estrategias de mercadotecnia.
+                    <br><br>
+                    <b>></b> Conocimientos para el desarrollo de
+                    productos y marcas.
+                    <br><br>
+                    <b>></b> Investigación e inteligencia de mercados.
+                    <br><br>
+                    <b>></b> Contabilidad y matemáticas financieras.
+                    <br><br>
+                    <b>></b> Desarrollar campañas de publicidad y
+                    promoción.
+                    <br><br>
+                    <b>></b> Proceso de ventas.
+                    <br><br>
+                    <b>></b> Manejo de redes sociales, tecnologías de
+                    la información y la comunicación.
+                    <br><br>
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    HABILIDADES:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Expresión oral.
+                    <br><br>
+                    <b>></b> Capacidad para mediar e intervenir en la
+                    resolución de conflictos.
+                    <br><br>
+                    <b>></b> Habilidad para la gestión y proponer
+                    acciones paralelas a la toma de decisión de
+                    los altos directivos.
+                    <br><br>
+                    <b>></b> Disposición para la búsqueda de
+                    información argumentada y veraz.
+                    <br><br>
+                    <b>></b> Habilidades básicas, analíticas, críticas y
+                    creativas del pensamiento.
+                    <br><br>
+                    <b>></b> Competencia básica en el idioma inglés
+                    para el manejo de materiales como textos,
+                    videos y audio.
+                    <br><br>
+                    <b>></b> Habilidad para trabajar en forma
+                    autónoma.
+                    <br><br>
+                    <b>></b> Capacidad de trabajo en equipo.
+                    <br><br>
+                    <b>></b> Capacidad para organizar y planificar el
+                    tiempo.
+                  </p><br><br>
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CAMPO DE TRABAJO
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    Es capaz de desarrollarse de manera ética,
+                    profesional y eficiente en áreas como:
+                    <br><br>
+                    <b>></b> Investigador de mercados
+                    <br><br>
+                    <b>></b> Publicista
+                    <br><br>
+                    <b>></b> Director de mercadotecnia internacional
+                    <br><br>
+                    <b>></b> Coordinador de Relaciones Públicas
+                    <br><br>
+                    <b>></b> Creador de campañas publicitarias
+                    <br><br>
+                    <b>></b> Gerente de desarrollo de proyectos
+                    <br><br>
+                    <b>></b> Consultor de marketing
+                    <br><br>
+                    <b>></b> Especialista en desarrollo de productos
+                    <br><br>
+                    <b>></b> Gerente de Ventas
+                    <br><br>
+                    <b>></b> Community Manager
+                  </p><br><br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade show active" id="nav-perfil2" role="tabpanel" aria-labelledby="nav-perfil2-tab">
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">1er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Comunicación Oral y
+                    escrita
+                    <br><br>
+                    Administración
+                    <br><br>
+                    Contabilidad
+                    <br><br>
+                    Teoría del derecho
+                    <br><br>
+                    Economía
+                    <br><br>
+                    Herramientas
+                    tecnológicas
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">2do Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Pensamiento crítico
+                    <br><br>
+                    Contabilidad Financiera
+                    <br><br>
+                    Mercadotecnia
+                    <br><br>
+                    Derecho mercantil
+                    <br><br>
+                    Microeconomía
+                    <br><br>
+                    Inglés I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">3er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Sociología
+                    <br><br>
+                    Contabilidad de costos
+                    <br><br>
+                    Metodología de la
+                    investigación
+                    <br><br>
+                    Razonamiento
+                    <br><br>
+                    Matemático
+                    <br><br>
+                    Macroeconomía
+                    <br><br>
+                    Inglés II
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">4to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Investigación de
+                    mercados
+                    <br><br>
+                    Técnicas de negociación
+                    empresarial
+                    <br><br>
+                    Mercadotecnia
+                    Internacional
+                    <br><br>
+                    Sistemas de información
+                    <br><br>
+                    Ventas
+                    <br><br>
+                    Inglés III
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">5to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Ética y Valores
+                    <br><br>
+                    Desarrollo de productos
+                    y marcas
+                    <br><br>
+                    Administración de
+                    recursos humanos
+                    <br><br>
+                    Matemáticas financieras
+                    <br><br>
+                    Promoción de ventas
+                    <br><br>
+                    Inglés IV
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">6to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Responsabilidad social y
+                    desarrollo sustentable
+                    <br><br>
+                    Medios masivos de
+                    comunicación
+                    <br><br>
+                    Mercadotecnia
+                    estratégica
+                    <br><br>
+                    Análisis e interpretación
+                    de estados financieros
+                    <br><br>
+                    Técnicas de promoción
+                    <br><br>
+                    Optativa I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">7mo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Comportamiento del
+                    consumidor
+                    <br><br>
+                    Publicidad
+                    <br><br>
+                    Mercadotecnia de
+                    servicios
+                    <br><br>
+                    Relaciones públicas
+                    <br><br>
+                    Dirección de ventas
+                    <br><br>
+                    Optativa II
+                    <br><br>
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">8vo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Emprendimiento e
+                    Innovación
+                    <br><br>
+                    Inteligencia de
+                    mercados
+                    <br><br>
+                    Diseño publicitario
+                    <br><br>
+                    Logística y distribución
+                    <br><br>
+                    Presupuestos
+                    <br><br>
+                    Optativa III
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;"></p>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">9no Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Seminario de titulación
+                    <br><br>
+                    Marketing
+                    <br><br>
+                    Dirección de campañas
+                    publicitarias
+                    <br><br>
+                    Imagen corporativa
+                    <br><br>
+                    Comercio electrónico
+                    <br><br>
+                    Optativa IV
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">Optativas</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Dirección de Marketing
+                    <br><br>
+                    Taller de formación de
+                    Empresas
+                    <br><br>
+                    Servicio al Cliente
+                    <br><br>
+                    Desarrollo de Franquicias
+                    <br><br>
+                    Comunicación
+                    Organizacional
+                    <br><br>
+                    Negocios en ambientes
+                    globales
+                    <br><br>
+                    Administración de
+                    Proyectos
+                    <br><br>
+                    Evaluación de Proyectos
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;"></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <br><br>
+
+          <div class="" style="text-align: center;">
+            <img src="images/headermkt.png" alt="" width="90%">
+          </div>
+          <br><br><br>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+      <div style="background-color: #007bff;">
+        <div class="container">
+
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <div class="formato-izq footer-logo col-lg-6 col-md-12"><img src="images/logo-white.png" alt="EAV-logo" height="100"></div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <h6 class="mb-0" style="color: white;">Siguenos en nuestras redes sociales</h6>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/EAVLicenciaturas/" class="social-icon fab fa-facebook-f fa-lg"></a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/aeronauticaeav" class="social-icon fab fa-twitter fa-lg"></a>
+              <!-- Instagram-->
+              <a href="https://www.instagram.com/aeronautica_eav/" class="social-icon fab fa-instagram fa-lg"></a>
+              <!--Envelope-->
+              <a href="mailto:info@eav.edu.mx" class="social-icon fas fa-envelope fa-lg"></a>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row-->
+
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+            <p>
+              <a href="historia.html">Historia</a>
+            </p>
+            <p>
+              <a href="filosofia.html">Filosofia Institucional</a>
+            </p>
+            <p>
+              <a href="instalaciones.html">Instalaciones</a>
+            </p>
+            <p>
+              <a href="reglamento.html">Reglamento</a>
+            </p>
+            <p>
+              <a href="privacidad.html">Aviso de privacidad</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <br>
+            <h6 class="text-uppercase font-weight-bold">Oferta Académica</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+            <p>
+              <a href="TSU.html">Tecnico Superior Universitario (TSU)</a>
+            </p>
+            <p>
+              <a href="licenciaturas.html">Licenciaturas</a>
+            </p>
+            <p>
+              <a href="maestrias.html">Maestrias</a>
+            </p>
+            <p>
+              <a href="especialidades.html">Especialidades</a>
+            </p>
+            <p>
+              <a href="cursos-especiales.html">Cursos Especiales</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <br>
+            <h6 class="text-uppercase font-weight-bold">links de interés</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+            <p>
+              <a href="informacion.html">Información</a>
+            </p>
+            <p>
+              <a href="vida-universitaria.html">Vida Universitaria</a>
+            </p>
+            <p>
+              <a href="practicas.html">Prácticas</a>
+            </p>
+            <p>
+              <a href="vinculacion.html">Vinculación con empresas</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <!-- Links -->
+            <br>
+            <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+            <p>
+              <i class="fas fa-home mr-3"></i> Antonio de Mendoza #204 Boca del Rio, Veracruz</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@eav.edu.mx</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> (229) 200 02 33</p>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © Centro Universitario EAV     <img src="images/SEP logo.png" alt="" width="10%"> <p style="color:white;">Eduardo Rodriguez</p>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+      <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="index.js" charset="utf-8"></script>
+
+    </body>
+
+    </html>

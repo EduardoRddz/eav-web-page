@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EAV</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189911770-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-189911770-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '404249573788427');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=404249573788427&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5971de0086.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!---TIDIO------>
+  <script src="//code.tidio.co/8wwajboqwkkwhbirnokyo3ebst7bsruc.js" async></script>
+  <!---TIDIO------>
+
+</head>
+
+<body>
+
+  <header class="navigation">
+
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white navbar-primary">
+
+      <a class="navbar-brand py-0" href="index.html"><img class="logo-image" id="logo" src="images/logo-prueba.png" alt=""></a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i id="toggle-bars" class="fas fa-bars" style="color:#007bff; font-size:28px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Acerca de
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="filosofia.html">Filosofia Institucional</a></li>
+              <li><a class="dropdown-item" href="instalaciones.html">Instalaciones</a></li>
+        <!----      <a class="dropdown-item" href="directorio.html">Directorio</a> ------>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Normatividad Institucional</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="reglamento-general-universitario.html">Reglamento General Universitario</a></li>
+                  <li><a class="dropdown-item" href="aprendizaje-modelo-hibrido.html">Aprendizaje en Modelo Híbrido</a></li>
+                  <li><a class="dropdown-item" href="reglamento-operacion-educacion-linea.html">Reglas de Operación de Educación en Línea</a></li>
+                  <li><a class="dropdown-item" href="reglamento-interno-personal-aeronautico.html">Reglamento Interno para Personal Técnico Aeronáutico</a></li>
+                  <li><a class="dropdown-item" href="manual-practica-vuelo.html">Manual de Prácticas de Vuelo Real y Simulado</a></li>
+                  <li><a class="dropdown-item" href="lineamientos-generales-funcion-docente.html">Lineamientos Genrales de la Función Docente</a></li>
+                  <li><a class="dropdown-item" href="reglamento-alumno.html">Reglamento del Alumno</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Oferta Académica
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="TSU.html">Técnico Superior Universitario (TSU)</a></li>
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Licenciaturas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="LASGA.html">LASGA</a></li>
+                  <li><a class="dropdown-item" href="lic-administracion.html">Administración</a></li>
+                  <li><a class="dropdown-item" href="lic-comercio-int.html">Comercio Internacional</a></li>
+                  <li><a class="dropdown-item" href="lic-derecho.html">Derecho</a></li>
+                  <li><a class="dropdown-item" href="lic-educacion.html">Educación</a></li>
+                  <li><a class="dropdown-item" href="lic-mercadotecnia.html">Mercadotecnia</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="maestrias.html">Maestrias</a></li>
+              <li><a class="dropdown-item" href="especialidades.html">Especialidades</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Carreras Técnicas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="curso-mantenimiento.html">Técnico en Mantenimiento</a>
+              <a class="dropdown-item" href="curso-oficialoperaciones.html">Oficial de Operaciones</a>
+              <a class="dropdown-item" href="curso-sobrecargo.html">Curso de Sobrecargo</a>
+              <a class="dropdown-item" href="curso-pilotopalafija.html">Piloto Privado Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotopalarotativa.html">Piloto Privado Ala Rotativa</a>
+              <a class="dropdown-item" href="curso-pilotocalafija.html">Piloto Comercial Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotocalarotativa.html">Piloto Comercial Ala Rotativa</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="campus.html">Campus</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios Escolares
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="servicio-social.html">Servicio Social</a>
+              <a class="dropdown-item" href="practicas.html">Prácticas</a>
+              <a class="dropdown-item" href="titulacion.html">Titulación</a>
+              <a class="dropdown-item" href="calendario.html">Calendario Escolar</a>
+              <a class="dropdown-item" href="colaboraciones.html">Colaboraciones</a>
+          <!----    <a class="dropdown-item" href="faq.html">Calificaciones</a> ----->
+              <a class="dropdown-item" href="becas.html">Becas</a>
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+            </div>
+          </li>
+      <!---    <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Trámites
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pagos.html">Pagos</a>
+              <a class="dropdown-item" href="pagos.html">Facturas</a>
+              <a class="dropdown-item" href="pagos.html">Constancias</a>
+            </div>
+          </li> ------>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="http://eav-superiores.com/moodle/">Plataforma Online</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!--Nav Bar-->
+
+  </header>
+
+
+  <section>
+    <div class="container-fluid container-xl fixed-bg-licenciatura">
+      <div class="container-fluid encuentra-titulo container-xl updownspace animated animatedFadeInUp fadeInUp">
+        <h5 style="color: white;  padding-top: 10%;">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h5>
+        <h1 style="color: white;"><b>Licenciaturas</b></h1>
+      </div>
+    </div>
+
+  </section>
+
+
+      <section id="">
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <nav>
+        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-derecho-tab" data-toggle="tab" href="#nav-derecho" role="tab" aria-controls="nav-derecho" aria-selected="true">Derecho</a>
+          <a class="nav-item nav-link" id="nav-mkt-tab" data-toggle="tab" href="#nav-mkt" role="tab" aria-controls="nav-mkt" aria-selected="false">Mercadotecnia</a>
+          <a class="nav-item nav-link" id="nav-admin-tab" data-toggle="tab" href="#nav-admin" role="tab" aria-controls="nav-admin" aria-selected="false">Administración</a>
+          <a class="nav-item nav-link" id="nav-educacion-tab" data-toggle="tab" href="#nav-educacion" role="tab" aria-controls="nav-educacion" aria-selected="false">Educación</a>
+          <a class="nav-item nav-link" id="nav-cia-tab" data-toggle="tab" href="#nav-cia" role="tab" aria-controls="nav-cia" aria-selected="false">Comercio Intl</a>
+          <a class="nav-item nav-link" id="nav-lasga-tab" data-toggle="tab" href="#nav-lasga" role="tab" aria-controls="nav-lasga" aria-selected="false">LASGA</a>
+        </div>
+      </nav>
+      <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+        <div class="rightlefttspace tab-pane fade show active" id="nav-derecho" role="tabpanel" aria-labelledby="nav-derecho-tab">
+
+          <br>
+          <img src="images/carrerasstripe.png" alt="" width="100%">
+          <br><br>
+
+          <div class="" style="text-align: center;">
+            <img src="images/headerderecho.png" alt="" width="90%">
+          </div>
+          <br><br><br>
+
+            <nav>
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                  <li>
+                    <img src="images/lapiz.png" alt="" width="20%">
+                  </li>
+                  Objetivo
+                </a>
+
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                  <li>
+                    <img src="images/perfili.png" alt="" width="20%">
+                  </li>
+                  Perfil de Ingreso
+                </a>
+
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                  <li>
+                    <img src="images/perfile.png" alt="" width="20%">
+                  </li>
+                  Perfil de Egreso
+                </a>
+
+                <a class="nav-item nav-link" id="nav-perfil-tab" data-toggle="tab" href="#nav-perfil" role="tab" aria-controls="nav-perfil" aria-selected="false">
+                  <li>
+                    <img src="images/plan.png" alt="" width="20%">
+                  </li>
+                  Plan de Estudios
+                </a>
+
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row">
+                  <div class="col-12">
+                    <p style="color: #044972; text-align: justify;">
+                      Formar profesionales altamente capacitados
+                      en las áreas del Derecho para interpretar de
+                      manera pertinente y fundamentada el marco
+                      normativo mexicano por medio de
+                      conocimientos sólidos que favorezcan el
+                      desarrollo de habilidades para la solución de
+                      problemas jurídicos en los sectores
+                      empresarial, público y social con un alto valor
+                      ético.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                      PERFIL DE INGRESO
+                    </p>
+                    <br>
+                    <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                      <b>></b> Conocer todas las normas y procedimientos
+                      básicos del Derecho de manera eficiente y
+                      segura, con fines privados o públicos, de
+                      acuerdo a los reglamentos oficiales.
+                      <br><br>
+                      <b>></b> Cumplir con las funciones de enseñanza,
+                      investigación y proyección institucional jurídica
+                      y difusión de la cultura de la legalidad.
+                      <br><br>
+                      <b>></b> Constituir un plan de estudio integrado por
+                      programas de asignatura de acuerdo con los
+                      más recientes adelantos en diversos campos de
+                      conocimiento de las ciencias jurídicas.
+                      <br><br>
+                      <b>></b> Dotar a los egresados de ventajas
+                      competitivas para su inserción en el mercado de
+                      trabajo.
+                      <br><br>
+                      <b>></b> Promover los valores fundamentales de la
+                      Institución: la equidad, el respeto, la tolerancia,
+                      el dialogo, la responsabilidad y el compromiso
+                      con la sociedad mexicana.
+                      <br><br>
+                      <b>></b> Facilidad para el trato con el público.
+                    </p>
+                    <br><br>
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+                <div class="row">
+                  <div class="col-12">
+                    <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                      <b>></b> Conocer las teorías y fundamentos
+                      filosóficos del derecho civil, penal, fiscal,
+                      laboral, electoral y notarial.
+                      <br><br>
+                      <b>></b> Conocerá la historia del derecho
+                      mexicano y de sus instituciones jurídicas.
+                      <br><br>
+                      <b>></b> Capacidad para proponer, conducir y
+                      concluir con seriedad las etapas procesales
+                      del derecho civil, penal, administrativo,
+                      fiscal y laboral.
+                    </p>
+                    <br>
+                    <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                      CAMPO DE TRABAJO
+                    </p><br>
+                    <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                      <b>></b> Litigar de manera independiente o
+                      atendiendo asuntos corporativos.
+                      <br><br>
+                      <b>></b> Tribunales administrativos o laborales.
+                      <br><br>
+                      <b>></b> Notarías y corredurías públicas.
+                      <br><br>
+                      <b>></b> Poder Judicial local y federal.
+                      <br><br>
+                      <b>></b> Administración pública municipal, estatal o
+                      federal.
+                      <br><br>
+                      <b>></b> Poder legislativo estatal o federal.
+                      <br><br>
+                      <b>></b> Área legal de las empresas.
+                      <br><br>
+                      <b>></b> Asesor legal en organismos internacionales.
+                      <br><br>
+                      <b>></b> Academia o investigación.
+                    </p><br><br>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane fade" id="nav-perfil" role="tabpanel" aria-labelledby="nav-perfil-tab">
+
+                <div class="row">
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">1er Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Comunicación Oral y
+                      escrita
+                      <br><br>
+                      Derecho Romano
+                      <br><br>
+                      Historia del Derecho
+                      Mexicano
+                      <br><br>
+                      Teoría del Derecho I
+                      <br><br>
+                      Derecho Civil I
+                      <br><br>
+                      Herramientas
+                      tecnológicas
+                    </p>
+                    <br><br>
+                  </div>
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">2do Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Pensamiento crítico
+                      <br><br>
+                      Derecho Penal
+                      <br><br>
+                      Teoría del Estado
+                      <br><br>
+                      Teoría del Derecho II
+                      <br><br>
+                      Derecho Civil II
+                      <br><br>
+                      Inglés I
+                    </p>
+                    <br><br>
+                  </div>
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">3er Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Sociología
+                      <br><br>
+                      Teoría del Delito
+                      <br><br>
+                      Teoría General del
+                      Proceso
+                      <br><br>
+                      Derecho mercantil I
+                      <br><br>
+                      Derecho civil III
+                      <br><br>
+                      Inglés II
+                    </p>
+                    <br><br>
+                  </div>
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">4to Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Filosofía del Derecho
+                      <br><br>
+                      Derecho Procesal Civil
+                      <br><br>
+                      Contratos
+                      <br><br>
+                      Derecho mercantil II
+                      <br><br>
+                      Derecho Constitucional
+                      <br><br>
+                      Inglés III
+                    </p>
+                    <br><br>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">5to Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Ética y Valores
+                      <br><br>
+                      Derecho Procesal
+                      Penal
+                      <br><br>Contabilidad de
+                      costos
+                      <br><br>
+                      Delitos Especiales
+                      <br><br>
+                      Derecho Agrario
+                      <br><br>
+                      Derechos Humanos
+                      <br><br>
+                      Inglés IV
+                    </p>
+                    <br><br>
+                  </div>
+
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">6to Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Responsabilidad social y
+                      desarrollo sustentable
+                      <br><br>
+                      Derecho administrativo
+                      <br><br>
+                      Derecho Fiscal
+                      <br><br>
+                      Amparo I
+                      <br><br>
+                      Derecho Laboral I
+                      <br><br>
+                      Optativa I
+                    </p>
+                    <br><br>
+                  </div>
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">7mo Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Economía
+                      <br><br>
+                      Derecho Electoral
+                      <br><br>
+                      Derecho Procesal
+                      <br><br>
+                      Administrativo y Fiscal
+                      <br><br>
+                      Amparo II
+                      <br><br>
+                      Derecho Laboral II
+                      <br><br>
+                      Optativa II
+                      <br><br>
+                    </p>
+                    <br><br>
+                  </div>
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">8vo Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Empredimiento e
+                      Innovación
+                      <br><br>
+                      Derecho Notarial
+                      <br><br>
+                      Argumentación Jurídica
+                      <br><br>
+                      Derecho Internacional
+                      Privado
+                      <br><br>
+                      Derecho Procesal
+                      <br><br>
+                      Laboral
+                      <br><br>
+                      Optativa III
+                    </p>
+                    <br><br>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;"></p>
+                  </div>
+
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">9no Cuatrimestre</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Seminario de titulación
+                      <br><br>
+                      Métodos Alternos de
+                      Justicia
+                      <br><br>
+                      Sistema de Legislación
+                      Aduanera
+                      <br><br>
+                      Derecho Internacional
+                      Público
+                      <br><br>
+                      Derecho Seguridad
+                      Social
+                      <br><br>
+                      Optativa IV
+                    </p>
+                    <br><br>
+                  </div>
+                  <div class="col-lg-3" style="text-align: center;">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">Optativas</p>
+                    <p class="" style="color: #044972; text-align: center;">
+                      Derecho Bancario y
+                      Bursátil
+                      <br><br>
+                      Derecho Ambiental
+                      <br><br>
+                      Criminología
+                      <br><br>
+                      Justicia de menores
+                      <br><br>
+                      Derecho Penitenciario
+                      <br><br>
+                      Práctica forense de
+                      amparo
+                      <br><br>
+                      Medicina Legal
+                      <br><br>
+                      Familia y sucesiones
+                    </p>
+                    <br><br>
+                  </div>
+                  <div class="col-lg-3">
+                    <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;"></p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <br><br><br>
+        </div>
+
+
+      <div class="rightlefttspace tab-pane fade" id="nav-mkt" role="tabpanel" aria-labelledby="nav-mkt-tab">
+
+
+        <br>
+        <img src="images/carrerasstripe.png" alt="" width="100%">
+        <br><br>
+
+        <div class="" style="text-align: center;">
+          <img src="images/headermkt.png" alt="" width="90%">
+        </div>
+        <br><br><br>
+
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home2-tab" data-toggle="tab" href="#nav-home2" role="tab" aria-controls="nav-home2" aria-selected="true">
+                <li>
+                  <img src="images/lapiz.png" alt="" width="20%">
+                </li>
+                Objetivo
+              </a>
+
+              <a class="nav-item nav-link" id="nav-profile2-tab" data-toggle="tab" href="#nav-profile2" role="tab" aria-controls="nav-profile2" aria-selected="false">
+                <li>
+                  <img src="images/perfili.png" alt="" width="20%">
+                </li>
+                Perfil de Ingreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-contact2-tab" data-toggle="tab" href="#nav-contact2" role="tab" aria-controls="nav-contact2" aria-selected="false">
+                <li>
+                  <img src="images/perfile.png" alt="" width="20%">
+                </li>
+                Perfil de Egreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-perfil2-tab" data-toggle="tab" href="#nav-perfil2" role="tab" aria-controls="nav-perfil2" aria-selected="false">
+                <li>
+                  <img src="images/plan.png" alt="" width="20%">
+                </li>
+                Plan de Estudios
+              </a>
+
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+
+            <div class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home2-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: #044972; text-align: justify;">
+                    Formar profesionales altamente capacitados
+                    en las áreas de Mercadotecnia para crear,
+                    comunicar, distribuir e intercambiar
+                    productos y/o servicios que tengan valor
+                    para los consumidores, por medio de una
+                    sólida preparación en la investigación e
+                    inteligencia de mercados, que favorezcan la
+                    creación, innovación y ventas de productos
+                    que propicie el éxito de los sectores
+                    empresariales y sociales con un alto valor
+                    ético.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile2-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    PERFIL DE INGRESO
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Facilidad de expresión verbal.
+                    <br><br>
+                    <b>></b> Habilidades para el pensamiento crítico,
+                    analítico y reflexivo.
+                    <br><br>
+                    <b>></b> Disposición para las relaciones
+                    interpersonales.
+                    <br><br>
+                    <b>></b> Habilidades de negociación y solución de
+                    conflictos.
+                    <br><br>
+                    <b>></b> Poseer un espíritu emprendedor y de servicio
+                    a la Sociedad, además de interés por el
+                    comercio, los sistemas y técnicas
+                    administrativas, que le permitan comprender el
+                    funcionamiento de los mercados.
+                    <br><br>
+                    <b>></b> Realiza actividades de forma organizada.
+                    <br><br>
+                    <b>></b> Interés por aspectos relacionados con el
+                    mundo de la Mercadotecnia.
+                    <br><br>
+                    <b>></b> Capacidad de concentración y atención.
+                    <br><br>
+                    <b>></b> Facilidad para el trato con el público.
+                  </p>
+                  <br><br>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab">
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CONOCIMIENTOS:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Planear estrategias de mercadotecnia.
+                    <br><br>
+                    <b>></b> Conocimientos para el desarrollo de
+                    productos y marcas.
+                    <br><br>
+                    <b>></b> Investigación e inteligencia de mercados.
+                    <br><br>
+                    <b>></b> Contabilidad y matemáticas financieras.
+                    <br><br>
+                    <b>></b> Desarrollar campañas de publicidad y
+                    promoción.
+                    <br><br>
+                    <b>></b> Proceso de ventas.
+                    <br><br>
+                    <b>></b> Manejo de redes sociales, tecnologías de
+                    la información y la comunicación.
+                    <br><br>
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    HABILIDADES:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Expresión oral.
+                    <br><br>
+                    <b>></b> Capacidad para mediar e intervenir en la
+                    resolución de conflictos.
+                    <br><br>
+                    <b>></b> Habilidad para la gestión y proponer
+                    acciones paralelas a la toma de decisión de
+                    los altos directivos.
+                    <br><br>
+                    <b>></b> Disposición para la búsqueda de
+                    información argumentada y veraz.
+                    <br><br>
+                    <b>></b> Habilidades básicas, analíticas, críticas y
+                    creativas del pensamiento.
+                    <br><br>
+                    <b>></b> Competencia básica en el idioma inglés
+                    para el manejo de materiales como textos,
+                    videos y audio.
+                    <br><br>
+                    <b>></b> Habilidad para trabajar en forma
+                    autónoma.
+                    <br><br>
+                    <b>></b> Capacidad de trabajo en equipo.
+                    <br><br>
+                    <b>></b> Capacidad para organizar y planificar el
+                    tiempo.
+                  </p><br><br>
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CAMPO DE TRABAJO
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    Es capaz de desarrollarse de manera ética,
+                    profesional y eficiente en áreas como:
+                    <br><br>
+                    <b>></b> Investigador de mercados
+                    <br><br>
+                    <b>></b> Publicista
+                    <br><br>
+                    <b>></b> Director de mercadotecnia internacional
+                    <br><br>
+                    <b>></b> Coordinador de Relaciones Públicas
+                    <br><br>
+                    <b>></b> Creador de campañas publicitarias
+                    <br><br>
+                    <b>></b> Gerente de desarrollo de proyectos
+                    <br><br>
+                    <b>></b> Consultor de marketing
+                    <br><br>
+                    <b>></b> Especialista en desarrollo de productos
+                    <br><br>
+                    <b>></b> Gerente de Ventas
+                    <br><br>
+                    <b>></b> Community Manager
+                  </p><br><br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-perfil2" role="tabpanel" aria-labelledby="nav-perfil2-tab">
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">1er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Comunicación Oral y
+                    escrita
+                    <br><br>
+                    Administración
+                    <br><br>
+                    Contabilidad
+                    <br><br>
+                    Teoría del derecho
+                    <br><br>
+                    Economía
+                    <br><br>
+                    Herramientas
+                    tecnológicas
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">2do Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Pensamiento crítico
+                    <br><br>
+                    Contabilidad Financiera
+                    <br><br>
+                    Mercadotecnia
+                    <br><br>
+                    Derecho mercantil
+                    <br><br>
+                    Microeconomía
+                    <br><br>
+                    Inglés I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">3er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Sociología
+                    <br><br>
+                    Contabilidad de costos
+                    <br><br>
+                    Metodología de la
+                    investigación
+                    <br><br>
+                    Razonamiento
+                    <br><br>
+                    Matemático
+                    <br><br>
+                    Macroeconomía
+                    <br><br>
+                    Inglés II
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">4to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Investigación de
+                    mercados
+                    <br><br>
+                    Técnicas de negociación
+                    empresarial
+                    <br><br>
+                    Mercadotecnia
+                    Internacional
+                    <br><br>
+                    Sistemas de información
+                    <br><br>
+                    Ventas
+                    <br><br>
+                    Inglés III
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">5to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Ética y Valores
+                    <br><br>
+                    Desarrollo de productos
+                    y marcas
+                    <br><br>
+                    Administración de
+                    recursos humanos
+                    <br><br>
+                    Matemáticas financieras
+                    <br><br>
+                    Promoción de ventas
+                    <br><br>
+                    Inglés IV
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">6to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Responsabilidad social y
+                    desarrollo sustentable
+                    <br><br>
+                    Medios masivos de
+                    comunicación
+                    <br><br>
+                    Mercadotecnia
+                    estratégica
+                    <br><br>
+                    Análisis e interpretación
+                    de estados financieros
+                    <br><br>
+                    Técnicas de promoción
+                    <br><br>
+                    Optativa I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">7mo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Comportamiento del
+                    consumidor
+                    <br><br>
+                    Publicidad
+                    <br><br>
+                    Mercadotecnia de
+                    servicios
+                    <br><br>
+                    Relaciones públicas
+                    <br><br>
+                    Dirección de ventas
+                    <br><br>
+                    Optativa II
+                    <br><br>
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">8vo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Emprendimiento e
+                    Innovación
+                    <br><br>
+                    Inteligencia de
+                    mercados
+                    <br><br>
+                    Diseño publicitario
+                    <br><br>
+                    Logística y distribución
+                    <br><br>
+                    Presupuestos
+                    <br><br>
+                    Optativa III
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;"></p>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">9no Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Seminario de titulación
+                    <br><br>
+                    Marketing
+                    <br><br>
+                    Dirección de campañas
+                    publicitarias
+                    <br><br>
+                    Imagen corporativa
+                    <br><br>
+                    Comercio electrónico
+                    <br><br>
+                    Optativa IV
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">Optativas</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Dirección de Marketing
+                    <br><br>
+                    Taller de formación de
+                    Empresas
+                    <br><br>
+                    Servicio al Cliente
+                    <br><br>
+                    Desarrollo de Franquicias
+                    <br><br>
+                    Comunicación
+                    Organizacional
+                    <br><br>
+                    Negocios en ambientes
+                    globales
+                    <br><br>
+                    Administración de
+                    Proyectos
+                    <br><br>
+                    Evaluación de Proyectos
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;"></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <br><br><br>
+
+      </div>
+
+
+
+      <div class="rightlefttspace tab-pane fade" id="nav-admin" role="tabpanel" aria-labelledby="nav-admin-tab">
+
+        <br>
+        <img src="images/carrerasstripe.png" alt="" width="100%">
+        <br><br>
+
+        <div class="" style="text-align: center;">
+          <img src="images/headeradministracion.png" alt="" width="90%">
+        </div>
+        <br><br><br>
+
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home3-tab" data-toggle="tab" href="#nav-home3" role="tab" aria-controls="nav-home3" aria-selected="true">
+                <li>
+                  <img src="images/lapiz.png" alt="" width="20%">
+                </li>
+                Objetivo
+              </a>
+
+              <a class="nav-item nav-link" id="nav-profile3-tab" data-toggle="tab" href="#nav-profile3" role="tab" aria-controls="nav-profile3" aria-selected="false">
+                <li>
+                  <img src="images/perfili.png" alt="" width="20%">
+                </li>
+                Perfil de Ingreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-contact3-tab" data-toggle="tab" href="#nav-contact3" role="tab" aria-controls="nav-contact3" aria-selected="false">
+                <li>
+                  <img src="images/perfile.png" alt="" width="20%">
+                </li>
+                Perfil de Egreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-perfil3-tab" data-toggle="tab" href="#nav-perfil3" role="tab" aria-controls="nav-perfil3" aria-selected="false">
+                <li>
+                  <img src="images/plan.png" alt="" width="20%">
+                </li>
+                Plan de Estudios
+              </a>
+
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+
+            <div class="tab-pane fade show active" id="nav-home3" role="tabpanel" aria-labelledby="nav-home3-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: #044972; text-align: justify;">
+                    Formar profesionales altamente capacitados
+                    con los conocimientos conceptuales
+                    administrativos, técnicos y prácticos para
+                    crear, organizar, administrar y dirigir en forma
+                    exitosa empresas y organizaciones de
+                    cualquier índole, a nivel nacional e
+                    internacional, con un enfoque global,
+                    multidisciplinar y moderno que permita el
+                    manejo eficiente, óptimo y oportuno de los
+                    recursos humanos, materiales y financieros
+                    con un alto valor ético.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-profile3" role="tabpanel" aria-labelledby="nav-profile3-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    PERFIL DE INGRESO
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Facilidad de expresión verbal.
+                    <br><br>
+                    <b>></b> Habilidades para el pensamiento crítico,
+                    analítico y reflexivo.
+                    <br><br>
+                    <b>></b> Disposición para las relaciones
+                    interpersonales.
+                    <br><br>
+                    <b>></b> Capacidad para desarrollar habilidades de
+                    negociación y solución de conflictos.
+                    <br><br>
+                    <b>></b> Realiza actividades de forma organizada.
+                    <br><br>
+                    <b>></b> Interés por aspectos relacionados con el
+                    mundo administrativo.
+                    <br><br>
+                    <b>></b> Capacidad de concentración y atención.
+                    <br><br>
+                    <b>></b> Facilidad para el trato con el público.
+                  </p>
+                  <br><br>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="nav-contact3-tab">
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CONOCIMIENTOS:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Conocer las teorías y fundamentos de la
+                      Administración, las organizaciones, la
+                      economía, producción, relaciones públicas,
+                      contabilidad y mercadotecnia.
+                      <br><br>
+                      <b>></b> Conocer los procedimientos para integrar
+                      y dirigir grupos hacia el logro de objetivos.
+                      <br><br>
+                      <b>></b> Dirigir organizaciones públicas y
+                      privadas, optimizando el uso de recursos.
+                      <br><br>
+                      <b>></b> Capacidad para proponer, conducir y
+                      concluir con seriedad las etapas del
+                      desarrollo de proyectos.
+                    <br><br>
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CAMPO DE TRABAJO
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Director de instituciones públicas o
+                    privadas de diversos sectores económicos.
+                    <br><br>
+                    <b>></b> Dirigiendo diversas áreas de empresas
+                    públicas y privadas.
+                    <br><br>
+                    <b>></b> Creando instituciones propias.
+                    <br><br>
+                    <b>></b> Consultor en el área administrativa.
+                    <br><br>
+                    <b>></b> Docencia e investigación.
+                  </p><br><br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-perfil3" role="tabpanel" aria-labelledby="nav-perfil3-tab">
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">1er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Comunicación Oral y
+                    escrita
+                    <br><br>
+                    Administración
+                    <br><br>
+                    Contabilidad
+                    <br><br>
+                    Economía
+                    <br><br>
+                    Derecho mercantil I
+                    <br><br>
+                    Herramientas
+                    tecnológicas
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">2do Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Pensamiento crítico
+                    <br><br>
+                    Contabilidad financiera
+                    <br><br>
+                    Microeconomía
+                    <br><br>
+                    Derecho Mercantil
+                    <br><br>
+                    Teoría de las
+                    Organizaciones
+                    <br><br>
+                    Inglés I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">3er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Sociología
+                    <br><br>
+                    Razonamiento
+                    <br><br>
+                    Matemático
+                    <br><br>
+                    Macroeconomía
+                    <br><br>
+                    Derecho Laboral
+                    <br><br>
+                    Desarrollo y
+                    comportamiento
+                    organizacional
+                    <br><br>
+                    Inglés II
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">4to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Administración
+                    estratégica
+                    <br><br>
+                    Matemáticas financieras
+                    <br><br>
+                    Investigación de
+                    Operaciones
+                    <br><br>
+                    Mercadotecnia
+                    <br><br>
+                    Estadística Inferencial
+                    <br><br>
+                    Inglés III
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">5to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Ética y Valores
+                    <br><br>
+                    Teoría de la producción
+                    <br><br>
+                    Contabilidad de costos
+                    <br><br>
+                    Administración de ventas
+                    <br><br>
+                    Administración de
+                    recursos humanos
+                    <br><br>
+                    Inglés IV
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">6to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Responsabilidad social y
+                    desarrollo sustentable
+                    <br><br>
+                    Administración de la
+                    producción
+                    <br><br>
+                    Administración de
+                    proyectos
+                    <br><br>
+                    Investigación de
+                    mercados
+                    <br><br>
+                    Mercadotecnia
+                    Internacional
+                    <br><br>
+                    Optativa I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">7mo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Técnicas de negociación
+                    empresarial
+                    <br><br>
+                    Evaluación de proyectos
+                    <br><br>
+                    Dirección
+                    <br><br>
+                    Régimen Fiscal
+                    <br><br>
+                    Calidad
+                    <br><br>
+                    Optativa II
+                    <br><br>
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">8vo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Empredimiento e
+                    Innovación
+                    <br><br>
+                    Relaciones públicas
+                    <br><br>
+                    Presupuestos
+                    <br><br>
+                    Promoción de ventas
+                    <br><br>
+                    Sistemas de información
+                    <br><br>
+                    Optativa III
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;"></p>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">9no Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Seminario de titulación
+                    <br><br>
+                    Administración de
+                    Software empresarial
+                    <br><br>
+                    Sistema de legislación
+                    aduanera
+                    <br><br>
+                    Sistemas de gestión de
+                    calidad
+                    <br><br>
+                    Optativa IV
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">Optativas</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Administración de micro,
+                    mediana y pequeña
+                    empresa
+                    <br><br>
+                    Generación de marcas
+                    <br><br>
+                    Seminario de Auditoría
+                    <br><br>
+                    Administración hotelera
+                    <br><br>
+                    Administración de
+                    agencia de viajes
+                    <br><br>
+                    Desarrollo de
+                    franquicias
+                    <br><br>
+                    Comercio electrónico
+                    <br><br>
+                    Fijación de precios
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;"></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <br><br><br>
+
+      </div>
+
+
+
+      <div class="rightlefttspace tab-pane fade" id="nav-educacion" role="tabpanel" aria-labelledby="nav-educacion-tab">
+
+        <br>
+        <img src="images/carrerasstripe.png" alt="" width="100%">
+        <br><br>
+
+        <div class="" style="text-align: center;">
+          <img src="images/headereducacion.png" alt="" width="90%">
+        </div>
+        <br><br><br>
+
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home4-tab" data-toggle="tab" href="#nav-home4" role="tab" aria-controls="nav-home4" aria-selected="true">
+                <li>
+                  <img src="images/lapiz.png" alt="" width="20%">
+                </li>
+                Objetivo
+              </a>
+
+              <a class="nav-item nav-link" id="nav-profile4-tab" data-toggle="tab" href="#nav-profile4" role="tab" aria-controls="nav-profile4" aria-selected="false">
+                <li>
+                  <img src="images/perfili.png" alt="" width="20%">
+                </li>
+                Perfil de Ingreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-contact4-tab" data-toggle="tab" href="#nav-contact4" role="tab" aria-controls="nav-contact4" aria-selected="false">
+                <li>
+                  <img src="images/perfile.png" alt="" width="20%">
+                </li>
+                Perfil de Egreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-perfil4-tab" data-toggle="tab" href="#nav-perfil4" role="tab" aria-controls="nav-perfil4" aria-selected="false">
+                <li>
+                  <img src="images/plan.png" alt="" width="20%">
+                </li>
+                Plan de Estudios
+              </a>
+
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+
+            <div class="tab-pane fade show active" id="nav-home4" role="tabpanel" aria-labelledby="nav-home4-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: #044972; text-align: justify;">
+                    Formar profesionales altamente capacitados
+                    que se desempeñen en el área educativa con
+                    una sólida formación humanística, científica y
+                    técnica que le permita aplicar y generar modelos y diseños alternativos para transformar
+                    la practica educativa de acuerdo con la
+                    demanda que la sociedad le plantee en cada
+                    situación escolar a nivel medio superior y
+                    superior, aplicando los conocimientos obtenidos en las áreas teóricas-metodológicas,
+                    didácticas-pedagógicas y de investigación
+                    para la evaluación y/o solución de los problemas educativos en los diferentes campos de
+                    las Ciencias de la Educación con un alto valor
+                    ético.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-profile4" role="tabpanel" aria-labelledby="nav-profile4-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CONOCIMIENTOS:
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Cultura general
+                    <br><br>
+                    <b>></b> Comunicación oral y escrita
+                    <br><br>
+                    <b>></b> Computación básica
+                    <br><br>
+                    <b>></b> Lectura crítica y reflexiva
+                    <br><br>
+                    <b>></b> Matemáticas
+                  </p>
+                  <br><br>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact4" role="tabpanel" aria-labelledby="nav-contact4-tab">
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    PERFIL DE EGRESO:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    El Licenciado en Ciencias de la Educación es un profesional capaz de diseñar,
+                    ejecutar y evaluar programas y proyectos encaminados a satisfacer requerimientos y
+                    necesidades educativas que demanden diferentes instituciones u organizaciones
+                    conservando sus valores y ética profesional, pre especializándose en una de las
+                    tres áreas de pre especialización  de su elección,  de las Ciencias de la Educación.
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CONOCIMIENTOS:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Intervenir en las instituciones educativas
+                    con relación a la planeación, orientación,
+                    evaluación, tecnología educativa, educación
+                    virtual e investigación.
+                    <b>></b> Desempeñarse en la actividad docente en
+                    actividades en el aula a través de
+                    observación y práctica docente, modelos de
+                    docencia y laboratorios docentes.
+                    <br><br>
+                    <b>></b> Diseño y ejecución de asignaturas de
+                    apoyo al proceso de
+                    enseñanza-aprendizaje en diferentes
+                    contextos y en diversas áreas por medio
+                    del diseño curricular, didáctica y evaluación
+                    institucional.
+                    <br><br>
+                    <b>></b> Detectar, diagnosticar y tratar problemas
+                    de aprendizaje, en el área de Educación
+                    especial utilizando estrategias de
+                    intervención en educación especial.
+                    <br><br>
+                    <b>></b> Elaborar planes y programas de estudio
+                    de los diferentes niveles y modalidades de
+                    estudio.
+                  </p><br><br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-perfil4" role="tabpanel" aria-labelledby="nav-perfil4-tab">
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">1er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Comunicación oral y
+                    escrita
+                    <br><br>
+                    Historia de la Educación
+                    <br><br>
+                    Teoría de la Educación
+                    <br><br>
+                    Epistemología
+                    <br><br>
+                    Habilidades del
+                    pensamiento
+                    <br><br>
+                    Psicología general
+                    <br><br>
+                    Herramientas
+                    tecnológicas
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">2do Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Pensamiento crítico
+                    <br><br>
+                    Sociología de la educación
+                    <br><br>
+                    Filosofía de la educación
+                    <br><br>
+                    Estrategias de aprendizaje
+                    <br><br>
+                    Didáctica I
+                    <br><br>
+                    Psicología del aprendizaje
+                    <br><br>
+                    Probabilidad y estadística
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">3er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Ética y valores
+                    <br><br>
+                    Metodología de la
+                    investigación cuantitativa
+                    <br><br>
+                    Dinámica de grupos
+                    <br><br>
+                    Normativa educativa
+                    <br><br>
+                    Didáctica II
+                    <br><br>
+                    Psicología evolutiva y
+                    diferencial
+                    <br><br>
+                    Estadística inferencial
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">4to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    México, cultura y
+                    sociedad
+                    <br><br>
+                    Intervención escolar
+                    <br><br>
+                    Observación y práctica
+                    docente
+                    <br><br>
+                    Diseño curricular
+                    <br><br>
+                    Recursos didácticos
+                    <br><br>
+                    Psicología social
+                    <br><br>
+                    Desarrollo Humano
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">5to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Emprendimiento e
+                    innovación
+                    <br><br>
+                    Metodología de la
+                    investigación cualitativa
+                    <br><br>
+                    Tecnología educativa
+                    <br><br>
+                    Evaluación curricular
+                    <br><br>
+                    Planeación Educativa
+                    <br><br>
+                    Psicotécnica pedagógica
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">6to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Responsabilidad social y
+                    desarrollo sustentable
+                    <br><br>
+                    Habilidades directivas
+                    <br><br>
+                    Evaluación educativa
+                    <br><br>
+                    Modelos de docencia
+                    <br><br>
+                    Necesidades educativas
+                    especiales
+                    <br><br>
+                    Optativa I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">7mo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Plan de vida y carrera
+                    <br><br>
+                    Investigación educativa
+                    <br><br>
+                    Educación institucional
+                    <br><br>
+                    Laboratorio docente I
+                    <br><br>
+                    Estrategias de intervención
+                    para atender las
+                    necesidades educativas
+                    diferentes
+                    <br><br>
+                    Optativa II
+                    <br><br>
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">8vo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Seminario de titulación
+                    <br><br>
+                    Educación permanente
+                    <br><br>
+                    Orientación educativa
+                    <br><br>
+                    Laboratorio docente II
+                    <br><br>
+                    Educación virtual
+                    <br><br>
+                    Optativa III
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        <br><br><br>
+      </div>
+
+
+
+      <div class="rightlefttspace tab-pane fade" id="nav-cia" role="tabpanel" aria-labelledby="nav-cia-tab">
+        <br>
+        <img src="images/carrerasstripe.png" alt="" width="100%">
+        <br><br>
+
+        <div class="" style="text-align: center;">
+          <img src="images/headercomercio int.png" alt="" width="90%">
+        </div>
+        <br><br><br>
+
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home5-tab" data-toggle="tab" href="#nav-home5" role="tab" aria-controls="nav-home5" aria-selected="true">
+                <li>
+                  <img src="images/lapiz.png" alt="" width="20%">
+                </li>
+                Objetivo
+              </a>
+
+              <a class="nav-item nav-link" id="nav-profile5-tab" data-toggle="tab" href="#nav-profile5" role="tab" aria-controls="nav-profile5" aria-selected="false">
+                <li>
+                  <img src="images/perfili.png" alt="" width="20%">
+                </li>
+                Perfil de Ingreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-contact5-tab" data-toggle="tab" href="#nav-contact5" role="tab" aria-controls="nav-contact5" aria-selected="false">
+                <li>
+                  <img src="images/perfile.png" alt="" width="20%">
+                </li>
+                Perfil de Egreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-perfil5-tab" data-toggle="tab" href="#nav-perfil5" role="tab" aria-controls="nav-perfil5" aria-selected="false">
+                <li>
+                  <img src="images/plan.png" alt="" width="20%">
+                </li>
+                Plan de Estudios
+              </a>
+
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+
+            <div class="tab-pane fade show active" id="nav-home5" role="tabpanel" aria-labelledby="nav-home5-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: #044972; text-align: justify;">
+                    Formar profesionales altamente capacitados
+                     en las áreas del Comercio Internacional y
+                     Aduanas, conscientes de la realidad social,
+                     con una visión internacional de los negocios,
+                     capaces de crear, administrar, dirigir y
+                     asesorar actividades comerciales y
+                     organizaciones competitivas y sustentables
+                     en el ámbito de los mercados transnacionales
+                     con un alto valor ético.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-profile5" role="tabpanel" aria-labelledby="nav-profile5-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CONOCIMIENTOS:
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Cultura general
+                    <br><br>
+                    <b>></b> Comunicación oral y escrita
+                    <br><br>
+                    <b>></b> Computación básica
+                    <br><br>
+                    <b>></b> Lectura crítica y reflexiva
+                    <br><br>
+                    <b>></b> Matemáticas
+                  </p>
+                  <br><br>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact5" role="tabpanel" aria-labelledby="nav-contact5-tab">
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    PERFIL DE EGRESO:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    El Licenciado en Comercio Internacional y
+                    Aduanas es un profesional capaz de crear,
+                    administrar, dirigir y asesorar actividades
+                    comerciales y organizaciones competitivas
+                    y sustentables, conservando sus valores y
+                    ética profesional.
+                  </p>
+                  <br>
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    CONOCIMIENTOS:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Comercio Internacional, Merceología,
+                    Aranceles, Economía, Investigación de
+                    Mercados, Estrategias de Mercado y
+                    competitividad, Programas de fomento y
+                    apoyo al Comercio Internacional.
+                    <br><br>
+                    <b>></b> Estructura y funciones de las Agencias
+                    aduanales, Sistema aduanero mexicano,
+                    Legislación aduanera, Logística y
+                    transporte de Mercancías, Envase y
+                    embalaje.
+                    <br><br>
+                    <b>></b> Planeación y administración en Negocios
+                    Internacionales, Mercadotecnia, Estrategias
+                    de Mercado.
+                    <br><br>
+                    <b>></b> Técnicas de negociación empresarial,
+                    negociaciones y controversias en Comercio
+                    Exterior, Relaciones Públicas y Plan de
+                    Negocios.
+                    <br><br>
+                    <b>></b> Competencia lingüística en inglés.
+                    <br><br>
+                    <b>></b> Finanzas, Finanzas Internacionales,
+                    Presupuestos.
+                  </p><br><br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-perfil5" role="tabpanel" aria-labelledby="nav-perfil5-tab">
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">1er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Comunicación oral y
+                    escrita
+                    <br><br>
+                    Historia de la Educación
+                    <br><br>
+                    Teoría de la Educación
+                    <br><br>
+                    Epistemología
+                    <br><br>
+                    Habilidades del
+                    pensamiento
+                    <br><br>
+                    Psicología general
+                    <br><br>
+                    Herramientas
+                    tecnológicas
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">2do Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Pensamiento crítico
+                    <br><br>
+                    Sociología de la educación
+                    <br><br>
+                    Filosofía de la educación
+                    <br><br>
+                    Estrategias de aprendizaje
+                    <br><br>
+                    Didáctica I
+                    <br><br>
+                    Psicología del aprendizaje
+                    <br><br>
+                    Probabilidad y estadística
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">3er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Ética y valores
+                    <br><br>
+                    Metodología de la
+                    investigación cuantitativa
+                    <br><br>
+                    Dinámica de grupos
+                    <br><br>
+                    Normativa educativa
+                    <br><br>
+                    Didáctica II
+                    <br><br>
+                    Psicología evolutiva y
+                    diferencial
+                    <br><br>
+                    Estadística inferencial
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">4to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    México, cultura y
+                    sociedad
+                    <br><br>
+                    Intervención escolar
+                    <br><br>
+                    Observación y práctica
+                    docente
+                    <br><br>
+                    Diseño curricular
+                    <br><br>
+                    Recursos didácticos
+                    <br><br>
+                    Psicología social
+                    <br><br>
+                    Desarrollo Humano
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">5to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Emprendimiento e
+                    innovación
+                    <br><br>
+                    Metodología de la
+                    investigación cualitativa
+                    <br><br>
+                    Tecnología educativa
+                    <br><br>
+                    Evaluación curricular
+                    <br><br>
+                    Planeación Educativa
+                    <br><br>
+                    Psicotécnica pedagógica
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">6to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Responsabilidad social y
+                    desarrollo sustentable
+                    <br><br>
+                    Habilidades directivas
+                    <br><br>
+                    Evaluación educativa
+                    <br><br>
+                    Modelos de docencia
+                    <br><br>
+                    Necesidades educativas
+                    especiales
+                    <br><br>
+                    Optativa I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">7mo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Plan de vida y carrera
+                    <br><br>
+                    Investigación educativa
+                    <br><br>
+                    Educación institucional
+                    <br><br>
+                    Laboratorio docente I
+                    <br><br>
+                    Estrategias de intervención
+                    para atender las
+                    necesidades educativas
+                    diferentes
+                    <br><br>
+                    Optativa II
+                    <br><br>
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">8vo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Seminario de titulación
+                    <br><br>
+                    Educación permanente
+                    <br><br>
+                    Orientación educativa
+                    <br><br>
+                    Laboratorio docente II
+                    <br><br>
+                    Educación virtual
+                    <br><br>
+                    Optativa III
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        <br><br><br>
+      </div>
+
+
+      <div class="rightlefttspace tab-pane fade" id="nav-lasga" role="tabpanel" aria-labelledby="nav-lasga-tab">
+        <br>
+        <img src="images/carrerasstripe.png" alt="" width="100%">
+        <br><br>
+
+        <div class="" style="text-align: center;">
+          <img src="images/headerlasga.png" alt="" width="90%">
+        </div>
+        <br><br><br>
+
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home6-tab" data-toggle="tab" href="#nav-home6" role="tab" aria-controls="nav-home6" aria-selected="true">
+                <li>
+                  <img src="images/lapiz.png" alt="" width="20%">
+                </li>
+                Objetivo
+              </a>
+
+              <a class="nav-item nav-link" id="nav-contact6-tab" data-toggle="tab" href="#nav-contact6" role="tab" aria-controls="nav-contact6" aria-selected="false">
+                <li>
+                  <img src="images/perfile.png" alt="" width="20%">
+                </li>
+                Perfil de Egreso
+              </a>
+
+              <a class="nav-item nav-link" id="nav-perfil6-tab" data-toggle="tab" href="#nav-perfil6" role="tab" aria-controls="nav-perfil6" aria-selected="false">
+                <li>
+                  <img src="images/plan.png" alt="" width="20%">
+                </li>
+                Plan de Estudios
+              </a>
+
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+
+            <div class="tab-pane fade show active" id="nav-home6" role="tabpanel" aria-labelledby="nav-home6-tab">
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: #044972; text-align: justify;">
+                    Forjar profesionales capaces de dirigir y administrar cualquier empresa, especialmente, las del sector aeronáutico.
+                    Desarrollar capacidades y habilidades gerenciales para administrar eficientemente recursos humanos, materiales y financieros.
+                    <br><br>
+                    Además de esto, obtendrás los conocimientos y competencias que te permiten obtener la licencia de sobrecargo de aviación.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact6" role="tabpanel" aria-labelledby="nav-contact6-tab">
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                    PERFIL DE EGRESO:
+                  </p><br>
+                  <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                    <b>></b> Administración, Contabilidad, Mercadotecnia,
+                    Teoría de las Organizaciones.
+                    <br><br>
+                    <b>></b> Administración de Proyectos, Logística y
+                    transporte de mercancías.
+                    <br><br>
+                    <b>></b> Administración en ventas, Promoción de
+                    ventas, Relaciones públicas.
+                    <br><br>
+                    <b>></b> Servicios a bordo, Disposiciones Generales
+                    Aeronáuticas, Aerodinámica, Meteorología,
+                    Primeros auxilios.
+                    <br><br>
+                    <b>></b> Realiza actividades de forma organizada.
+                    <br><br>
+                    <b>></b> Reglamentación Aérea, Factor humano,
+                    Competencia lingüística en inglés y francés.
+                    <br><br>
+                    <b>></b> Protocolo e Imagen.
+                  </p>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-perfil6" role="tabpanel" aria-labelledby="nav-perfil6-tab">
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">1er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Comunicación Oral y Escrita
+                    <br><br>
+                    Administración
+                    <br><br>
+                    Contabilidad
+                    <br><br>
+                    Razonamiento Matemático
+                    <br><br>
+                    Introducción al Medio Aeronáutico
+                    <br><br>
+                    Aerodinámica
+                    <br><br>
+                    Herramientas Tecnológicas
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">2do Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Pensamiento Crítico
+                    <br><br>
+                    Administración Estratégica
+                    <br><br>
+                    Teoría de las Organizaciones
+                    <br><br>
+                    Mercadotecnia
+                    <br><br>
+                    Geografía Turística
+                    <br><br>
+                    Meteorología
+                    <br><br>
+                    Inglés I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">3er Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Ética y Valores
+                    <br><br>
+                    Administración de Proyectos
+                    <br><br>
+                    Desarrollo y Comportamiento Organizacional
+                    <br><br>
+                    Operaciones de Líneas Aéreas Comerciales y Ejecutivas
+                    <br><br>
+                    Reglamentación Aérea
+                    <br><br>
+                    Factor Humano
+                    <br><br>
+                    Inglés II
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">4to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Metodología de la Investigación
+                    <br><br>
+                    Administración de Ventas
+                    <br><br>
+                    Técnicas de Negociación Empresarial
+                    <br><br>
+                    Logística y Transporte de Mercancias
+                    <br><br>
+                    Servicios a Bordo
+                    <br><br>
+                    Requerimientos Técnicos
+                    <br><br>
+                    Competencias Lingüísticas y Comunicativas en Inglés
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">5to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Emprendimiento e innovación
+                    <br><br>
+                    Evaluación de Proyectos
+                    <br><br>
+                    Presupuestos
+                    <br><br>
+                    Transporte de Mercancías Peligrosas
+                    <br><br>
+                    Disposiciones Generales Aeronáuticas
+                    <br><br>
+                    Inglés Técnico Aeronáutico
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">6to Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Responsabilidad Social y Desarrollo Sustentable
+                    <br><br>
+                    Promoción de Ventas
+                    <br><br>
+                    Administración del Recurso Humano
+                    <br><br>
+                    Administración de Empresas Aéreas
+                    <br><br>
+                    Imagen Profesional y Ejecutiva
+                    <br><br>
+                    Francés I
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">7mo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Plan de Vida y Carrera
+                    <br><br>
+                    Relaciones Públicas
+                    <br><br>
+                    Dirección
+                    <br><br>
+                    Seguridad General en Aviación
+                    <br><br>
+                    Primeros Auxilios
+                    <br><br>
+                    Francés II
+                    <br><br>
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-3" style="text-align: center;">
+                  <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">8vo Cuatrimestre</p>
+                  <p class="" style="color: #044972; text-align: center;">
+                    Seminario de Titulación
+                    <br><br>
+                    Comercio Electrónico
+                    <br><br>
+                    Derecho Laboral
+                    <br><br>
+                    Procedimientos de Emergencia
+                    <br><br>
+                    Calidad en el Servicio
+                    <br><br>
+                    Competencias Lingüísticas y Comunicativas en Francés
+                  </p>
+                  <br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        <br><br><br>
+      </div>
+
+    </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+      <div style="background-color: #007bff;">
+        <div class="container">
+
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <div class="formato-izq footer-logo col-lg-6 col-md-12"><img src="images/logo-white.png" alt="EAV-logo" height="100"></div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <h6 class="mb-0" style="color: white;">Siguenos en nuestras redes sociales</h6>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/EAVLicenciaturas/" class="social-icon fab fa-facebook-f fa-lg"></a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/aeronauticaeav" class="social-icon fab fa-twitter fa-lg"></a>
+              <!-- Instagram-->
+              <a href="https://www.instagram.com/aeronautica_eav/" class="social-icon fab fa-instagram fa-lg"></a>
+              <!--Envelope-->
+              <a href="mailto:info@eav.edu.mx" class="social-icon fas fa-envelope fa-lg"></a>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row-->
+
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+            <p>
+              <a href="historia.html">Historia</a>
+            </p>
+            <p>
+              <a href="filosofia.html">Filosofia Institucional</a>
+            </p>
+            <p>
+              <a href="instalaciones.html">Instalaciones</a>
+            </p>
+            <p>
+              <a href="reglamento.html">Reglamento</a>
+            </p>
+            <p>
+              <a href="privacidad.html">Aviso de privacidad</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <br>
+            <h6 class="text-uppercase font-weight-bold">Oferta Académica</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+            <p>
+              <a href="TSU.html">Tecnico Superior Universitario (TSU)</a>
+            </p>
+            <p>
+              <a href="licenciaturas.html">Licenciaturas</a>
+            </p>
+            <p>
+              <a href="maestrias.html">Maestrias</a>
+            </p>
+            <p>
+              <a href="especialidades.html">Especialidades</a>
+            </p>
+            <p>
+              <a href="cursos-especiales.html">Cursos Especiales</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <br>
+            <h6 class="text-uppercase font-weight-bold">links de interés</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+            <p>
+              <a href="informacion.html">Información</a>
+            </p>
+            <p>
+              <a href="vida-universitaria.html">Vida Universitaria</a>
+            </p>
+            <p>
+              <a href="practicas.html">Prácticas</a>
+            </p>
+            <p>
+              <a href="vinculacion.html">Vinculación con empresas</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <!-- Links -->
+            <br>
+            <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+            <p>
+              <i class="fas fa-home mr-3"></i> Antonio de Mendoza #204 Boca del Rio, Veracruz</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@eav.edu.mx</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> (229) 200 02 33</p>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © Centro Universitario EAV     <img src="images/SEP logo.png" alt="" width="10%"> <p style="color:white;">Eduardo Rodriguez</p>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+      <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="index.js" charset="utf-8"></script>
+
+    </body>
+
+    </html>

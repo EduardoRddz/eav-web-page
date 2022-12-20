@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EAV</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189911770-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-189911770-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '404249573788427');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=404249573788427&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5971de0086.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!---TIDIO------>
+  <script src="//code.tidio.co/8wwajboqwkkwhbirnokyo3ebst7bsruc.js" async></script>
+  <!---TIDIO------>
+
+</head>
+
+<body>
+
+  <header class="navigation">
+
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white navbar-primary">
+
+      <a class="navbar-brand py-0" href="index.html"><img class="logo-image" id="logo" src="images/logo-prueba.png" alt=""></a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i id="toggle-bars" class="fas fa-bars" style="color:#007bff; font-size:28px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Acerca de
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="filosofia.html">Filosofia Institucional</a></li>
+              <li><a class="dropdown-item" href="instalaciones.html">Instalaciones</a></li>
+        <!----      <a class="dropdown-item" href="directorio.html">Directorio</a> ------>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Normatividad Institucional</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="reglamento-general-universitario.html">Reglamento General Universitario</a></li>
+                  <li><a class="dropdown-item" href="aprendizaje-modelo-hibrido.html">Aprendizaje en Modelo Híbrido</a></li>
+                  <li><a class="dropdown-item" href="reglamento-operacion-educacion-linea.html">Reglas de Operación de Educación en Línea</a></li>
+                  <li><a class="dropdown-item" href="reglamento-interno-personal-aeronautico.html">Reglamento Interno para Personal Técnico Aeronáutico</a></li>
+                  <li><a class="dropdown-item" href="manual-practica-vuelo.html">Manual de Prácticas de Vuelo Real y Simulado</a></li>
+                  <li><a class="dropdown-item" href="lineamientos-generales-funcion-docente.html">Lineamientos Genrales de la Función Docente</a></li>
+                  <li><a class="dropdown-item" href="reglamento-alumno.html">Reglamento del Alumno</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Oferta Académica
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="TSU.html">Técnico Superior Universitario (TSU)</a></li>
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Licenciaturas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="LASGA.html">LASGA</a></li>
+                  <li><a class="dropdown-item" href="lic-administracion.html">Administración</a></li>
+                  <li><a class="dropdown-item" href="lic-comercio-int.html">Comercio Internacional</a></li>
+                  <li><a class="dropdown-item" href="lic-derecho.html">Derecho</a></li>
+                  <li><a class="dropdown-item" href="lic-educacion.html">Educación</a></li>
+                  <li><a class="dropdown-item" href="lic-mercadotecnia.html">Mercadotecnia</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="maestrias.html">Maestrias</a></li>
+              <li><a class="dropdown-item" href="especialidades.html">Especialidades</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Carreras Técnicas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="curso-mantenimiento.html">Técnico en Mantenimiento</a>
+              <a class="dropdown-item" href="curso-oficialoperaciones.html">Oficial de Operaciones</a>
+              <a class="dropdown-item" href="curso-sobrecargo.html">Curso de Sobrecargo</a>
+              <a class="dropdown-item" href="curso-pilotopalafija.html">Piloto Privado Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotopalarotativa.html">Piloto Privado Ala Rotativa</a>
+              <a class="dropdown-item" href="curso-pilotocalafija.html">Piloto Comercial Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotocalarotativa.html">Piloto Comercial Ala Rotativa</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="campus.html">Campus</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios Escolares
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="servicio-social.html">Servicio Social</a>
+              <a class="dropdown-item" href="practicas.html">Prácticas</a>
+              <a class="dropdown-item" href="titulacion.html">Titulación</a>
+              <a class="dropdown-item" href="calendario.html">Calendario Escolar</a>
+              <a class="dropdown-item" href="colaboraciones.html">Colaboraciones</a>
+          <!----    <a class="dropdown-item" href="faq.html">Calificaciones</a> ----->
+              <a class="dropdown-item" href="becas.html">Becas</a>
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+            </div>
+          </li>
+      <!---    <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Trámites
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pagos.html">Pagos</a>
+              <a class="dropdown-item" href="pagos.html">Facturas</a>
+              <a class="dropdown-item" href="pagos.html">Constancias</a>
+            </div>
+          </li> ------>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="http://eav-superiores.com/moodle/">Plataforma Online</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!--Nav Bar-->
+
+  </header>
+
+
+  <section>
+    <div class="container-fluid container-xl fixed-bg-historia">
+      <div class="container-fluid encuentra-titulo container-xl updownspace animated animatedFadeInUp fadeInUp">
+        <h5 style="color: white;  padding-top: 10%;">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h5>
+        <h1 style="color: white;"><b>Historia</b></h1>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section>
+    <div class="row rightlefttspace updownspace">
+      <div class="col-lg-4 col-md-12">
+        <img src="images/instalaciones9.jpg" alt="" style="width: 100%; padding-top: 4rem;">
+        <p>EAV Centro Universitario</p>
+      </div>
+      <div class="col-lg-8 col-md-12">
+
+        <h4 style="color: #044972;">INICIO</h4>
+        <hr>
+        <p style="text-align: justify;">
+          <b>EAV CENTRO UNIVERSITARIO</b> es una empresa 100% veracruzana, responsable y sustentable, que brinda educación superior de calidad, cuya ideología, desde su principio, se ha sustentado en cimientos axiológicos, tales como la disciplina,
+          la competitividad, la cooperación y la solidaridad, forjando a hombres y mujeres en las distintas áreas de la Aeronáutica y de las Humanidades, bajo un modelo educativo moderno y completamente flexible, contando con estudios de Técnico
+          Superior Universitario, Licenciaturas, Especialidades y Maestrías, con planes de estudios reconocidos y validados por la Secretaría de Educación Pública, a través de la Dirección General de Acreditación, Incorporación y Revalidación, y la
+          Secretaría de Comunicaciones y Transportes, a través de la Agencia Federal de Aviación Civil.
+          <br><br>
+          La institución nació un verano del 2006, como un proyecto prometedor, siendo sus fundadores los señores Mario Juárez Cerón y Diana Castro Caloca, apoyados técnicamente por los Capitanes Pilotos Aviadores Francisco Martínez Bello y José de
+          Jesús Medina Sánchez; sumándose inmediatamente al mismo, notables Pilotos Aviadores egresados de la Heroica Escuela Naval Militar, ubicada en base de Antón Lizardo, entre cuyos nombres destacan José Luis Durán Sedas, Manuel Curiel Treviño,
+          Jesús Zilli Grajales, Raúl Zamorano Armas, Juan Antonio Cruz Naranjo y Jorge Albero Rivera Blas, quienes hasta ahora siguen contribuyendo y aportando sus técnicas y peritajes a esta institución.
+          <br><br>
+          La institución inició funciones como un Centro de Capacitación y Adiestramiento en 2006, estableciendo su Base de Operaciones en la Carretera Veracruz – Xalapa, kilometro 102, Colonia Las Bajadas, en el Municipio de Veracruz, Veracruz de
+          Ignacio de la Llave, teniendo una matrícula de seis alumnos adscritos a los Cursos de Piloto Aviador Privado, Técnico en Mantenimiento de Aeronaves y Oficial de Operaciones de Aeronaves.
+          <br><br>
+        </p>
+        <br>
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <h4 style="color: #044972;">CRECIMIENTO</h4>
+        <hr>
+        <p style="text-align: justify;">
+          El crecimiento de la institución comienza a ser visible en el 2007, año en el que legalmente se constituye <b>ESTUDIOS AERONÁUTICOS DE VERACRUZ</b> como un Sociedad Civil, lo que permite a la extinta Dirección General de Aviación Civil (por
+          sus siglas DGAC), hoy Agencia Federal de Aviación Civil (por sus siglas AFAC), otorgarle la autorización con clave F-54, con la cual, se facultaba formal y oficialmente a la institución para capacitar, mediante cursos teóricos – prácticos,
+          en distintas áreas de la aviación civil, tales como, Piloto Aviador Privado y Comercial de Ala Fija y Rotativa, así también el de Técnico en Mantenimiento de Aeronaves Ala Fija y Ala Rotativa. La aceptación por parte del público fue
+          considerable, para que la DGAC otorgará al año siguiente, en el 2008, las autorizaciones para que legalmente se impartan los Cursos Especiales, tales como el Manejo de Mercancías Peligrosas, Factores Humanos en la Aviación, Control de
+          Calidad en la Aviación, CRM / ADM (Manejo de Recursos en Cabina), CFIT (Vuelo Contralado Contra el Terreno), RVCM (Separación Vertical Reducida Mínima), y ALAR (Reducción de Accidentes en la Aproximación).
+          <br><br>
+          En el 2009 la DGAC otorga a la institución las autorizaciones para la impartición de los cursos de Legislación Aeronáutica, Radio Telefonista Aeronáutico Restringido, así como las correspondientes para ejercitar revalidaciones y
+          recuperaciones de Licencias al personal técnico aeronáutico que en su momento se encontraban matriculados.
+          <br><br>
+          En el 2010 la institución recibió la acreditación por parte de la Secretaría de Trabajo y Previsión Social (por sus siglas STPS) como Agente de Capacitador Externo para impartir cursos de capacitación y adiestramiento a trabajadores de
+          conformidad con los artículos 153 C y 153 P de la Ley Federal del Trabajo. Para mediados del 2011, la Institución recibe la autorización de la DGAC para impartir el curso de Sobrecargo de Aviación.
+          <br><br>
+          Gran paso dio la institución en 2012, cuando el centro de Capacitación trasladó sus cursos teóricos a las instalaciones del Colegio Andrew Bell, en el Fraccionamiento Costa Verde, en el Municipio de Boca del Río, Veracruz de Ignacio de la
+          Llave, en donde permaneció hasta el 2014, año en que se adquirió el inmueble donde actualmente nos encontramos, en la avenida Antonio de Mendoza 204 del Fraccionamiento Virginia en la misma demarcación municipal, con la finalidad de
+          proporcionar un mejor servicio, con instalaciones propias, amplias y equipadas con la tecnología adecuada.
+          <br><br>
+        </p>
+        <br>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <img src="images/vz.png" alt="" style="width: 100%; padding-top: 4rem;">
+        <p>Nuevas Aulas</p>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <img src="images/vz1.png" alt="" style="width: 100%; padding-top: 4rem;">
+        <p>Simulador</p>
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <h4 style="color: #044972;">EXPANSIÓN</h4>
+        <hr>
+        <p style="text-align: justify;">
+          La perseverancia y la disciplina con la que siempre ha actuado la institución, permitió su reconocimiento en distintas partes del país, lo que derivó un nuevo proyecto expansionista, el cual consistió en acercar la instrucción aeronáutica a
+          una población ya no local, sino para aquella que habita en las principales ciudades de la República Mexicana y sus alrededores, instalándose así sedes de operaciones y capacitación en las ciudades de Puebla (2015), Ciudad de México (2016) y
+          Monterrey (2017), donde actualmente se siguen ofertando Cursos Especiales y planes en modalidad de Técnico Superior Universitario.
+          <br><br>
+          A mediados del 2017 la institución emprende otro gran proyecto, viéndose, ya no como un Centro de Capacitación y Adiestramiento, sino como un Centro Universitario, constituyendo y diseñando planes y programas académicos, los cuales a
+          finales del mismo año fueron aprobados y autorizados por la Secretaría de Educación Pública, para ser impartidos en la modalidad de Técnico Superior Universitario y Licenciaturas, convirtiéndonos a inicios del 2018 en la primer institución
+          educativa a nivel nacional dedicada a la enseñanza aeronáutica con validez por la Secretaría de Educación Pública y la Secretaría de Comunicaciones y Transportes, garantizando un futuro prometedor a nuestros egresados, otorgándoles las
+          herramientas teórico – prácticas suficientes para el ejercicio de sus profesiones.
+          <br><br>
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-12">
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <h4 style="color: #044972;">REORGANIZACIÓN</h4>
+        <hr>
+        <p style="text-align: justify;">
+          A mediados del 2018 es cuando la institución oficialmente comienza a funcionar como un Centro Universitario, reorganizando su estructura interior y exterior, comenzándose a ofertar, además de los programas aeronáuticos, Licenciaturas,
+          Especialidades y Maestrías con enfoque en el área de Humanidades, mismas que empezaron a funcionar en septiembre del 2019, superando así las expectativas con las que inicialmente esta institución inició hace poco más de una década.
+        </p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #007bff;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <div class="formato-izq footer-logo col-lg-6 col-md-12"><img src="images/logo-white.png" alt="EAV-logo" height="100"></div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <h6 class="mb-0" style="color: white;">Siguenos en nuestras redes sociales</h6>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/EAVLicenciaturas/" class="social-icon fab fa-facebook-f fa-lg"></a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/aeronauticaeav" class="social-icon fab fa-twitter fa-lg"></a>
+            <!-- Instagram-->
+            <a href="https://www.instagram.com/aeronautica_eav/" class="social-icon fab fa-instagram fa-lg"></a>
+            <!--Envelope-->
+            <a href="mailto:info@eav.edu.mx" class="social-icon fas fa-envelope fa-lg"></a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="historia.html">Historia</a>
+          </p>
+          <p>
+            <a href="filosofia.html">Filosofia Institucional</a>
+          </p>
+          <p>
+            <a href="instalaciones.html">Instalaciones</a>
+          </p>
+          <p>
+            <a href="reglamento.html">Reglamento</a>
+          </p>
+          <p>
+            <a href="privacidad.html">Aviso de privacidad</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">Oferta Académica</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="TSU.html">Tecnico Superior Universitario (TSU)</a>
+          </p>
+          <p>
+            <a href="licenciaturas.html">Licenciaturas</a>
+          </p>
+          <p>
+            <a href="maestrias.html">Maestrias</a>
+          </p>
+          <p>
+            <a href="especialidades.html">Especialidades</a>
+          </p>
+          <p>
+            <a href="cursos-especiales.html">Cursos Especiales</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">links de interés</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="informacion.html">Información</a>
+          </p>
+          <p>
+            <a href="vida-universitaria.html">Vida Universitaria</a>
+          </p>
+          <p>
+            <a href="practicas.html">Prácticas</a>
+          </p>
+          <p>
+            <a href="vinculacion.html">Vinculación con empresas</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <i class="fas fa-home mr-3"></i> Antonio de Mendoza #204 Boca del Rio, Veracruz</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@eav.edu.mx</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> (229) 200 02 33</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © Centro Universitario EAV      <img src="images/SEP logo.png" alt="" width="10%"> <p style="color:white;">Eduardo Rodriguez</p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+
+  </body>
+
+  </html>

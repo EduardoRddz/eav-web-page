@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EAV</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189911770-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-189911770-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '404249573788427');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=404249573788427&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5971de0086.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!---TIDIO------>
+  <script src="//code.tidio.co/8wwajboqwkkwhbirnokyo3ebst7bsruc.js" async></script>
+  <!---TIDIO------>
+
+</head>
+
+<body>
+
+  <header class="navigation">
+
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white navbar-primary">
+
+      <a class="navbar-brand py-0" href="index.html"><img class="logo-image" id="logo" src="images/logo-prueba.png" alt=""></a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i id="toggle-bars" class="fas fa-bars" style="color:#007bff; font-size:28px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Acerca de
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="filosofia.html">Filosofia Institucional</a></li>
+              <li><a class="dropdown-item" href="instalaciones.html">Instalaciones</a></li>
+        <!----      <a class="dropdown-item" href="directorio.html">Directorio</a> ------>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Normatividad Institucional</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="reglamento-general-universitario.html">Reglamento General Universitario</a></li>
+                  <li><a class="dropdown-item" href="aprendizaje-modelo-hibrido.html">Aprendizaje en Modelo Híbrido</a></li>
+                  <li><a class="dropdown-item" href="reglamento-operacion-educacion-linea.html">Reglas de Operación de Educación en Línea</a></li>
+                  <li><a class="dropdown-item" href="reglamento-interno-personal-aeronautico.html">Reglamento Interno para Personal Técnico Aeronáutico</a></li>
+                  <li><a class="dropdown-item" href="manual-practica-vuelo.html">Manual de Prácticas de Vuelo Real y Simulado</a></li>
+                  <li><a class="dropdown-item" href="lineamientos-generales-funcion-docente.html">Lineamientos Genrales de la Función Docente</a></li>
+                  <li><a class="dropdown-item" href="reglamento-alumno.html">Reglamento del Alumno</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Oferta Académica
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="TSU.html">Técnico Superior Universitario (TSU)</a></li>
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Licenciaturas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="LASGA.html">LASGA</a></li>
+                  <li><a class="dropdown-item" href="lic-administracion.html">Administración</a></li>
+                  <li><a class="dropdown-item" href="lic-comercio-int.html">Comercio Internacional</a></li>
+                  <li><a class="dropdown-item" href="lic-derecho.html">Derecho</a></li>
+                  <li><a class="dropdown-item" href="lic-educacion.html">Educación</a></li>
+                  <li><a class="dropdown-item" href="lic-mercadotecnia.html">Mercadotecnia</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="maestrias.html">Maestrias</a></li>
+              <li><a class="dropdown-item" href="especialidades.html">Especialidades</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Carreras Técnicas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="curso-mantenimiento.html">Técnico en Mantenimiento</a>
+              <a class="dropdown-item" href="curso-oficialoperaciones.html">Oficial de Operaciones</a>
+              <a class="dropdown-item" href="curso-sobrecargo.html">Curso de Sobrecargo</a>
+              <a class="dropdown-item" href="curso-pilotopalafija.html">Piloto Privado Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotopalarotativa.html">Piloto Privado Ala Rotativa</a>
+              <a class="dropdown-item" href="curso-pilotocalafija.html">Piloto Comercial Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotocalarotativa.html">Piloto Comercial Ala Rotativa</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="campus.html">Campus</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios Escolares
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="servicio-social.html">Servicio Social</a>
+              <a class="dropdown-item" href="practicas.html">Prácticas</a>
+              <a class="dropdown-item" href="titulacion.html">Titulación</a>
+              <a class="dropdown-item" href="calendario.html">Calendario Escolar</a>
+              <a class="dropdown-item" href="colaboraciones.html">Colaboraciones</a>
+          <!----    <a class="dropdown-item" href="faq.html">Calificaciones</a> ----->
+              <a class="dropdown-item" href="becas.html">Becas</a>
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+            </div>
+          </li>
+      <!---    <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Trámites
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pagos.html">Pagos</a>
+              <a class="dropdown-item" href="pagos.html">Facturas</a>
+              <a class="dropdown-item" href="pagos.html">Constancias</a>
+            </div>
+          </li> ------>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="http://eav-superiores.com/moodle/">Plataforma Online</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!--Nav Bar-->
+
+  </header>
+
+
+  <section>
+    <div class="container-fluid container-xl fixed-bg-tsu">
+      <div class="container-fluid encuentra-titulo container-xl updownspace animated animatedFadeInUp fadeInUp">
+        <h5 style="color: white;  padding-top: 10%;">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h5>
+        <h1 style="color: white;"><b>Técnico Superior Universitario</b></h1>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section id="">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-piloto-tab" data-toggle="tab" href="#nav-piloto" role="tab" aria-controls="nav-piloto" aria-selected="true">Piloto Aviador</a>
+              <a class="nav-item nav-link" id="nav-mtto-tab" data-toggle="tab" href="#nav-mtto" role="tab" aria-controls="nav-mtto" aria-selected="false">Mantenimiento de Aeronaves</a>
+              <a class="nav-item nav-link" id="nav-operaciones-tab" data-toggle="tab" href="#nav-operaciones" role="tab" aria-controls="nav-operaciones" aria-selected="false">Oficial de Operaciones</a>
+            </div>
+          </nav>
+
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent" style="background-color: white;">
+            <div class="tab-pane fade show active" id="nav-piloto" role="tabpanel" aria-labelledby="nav-piloto-tab">
+
+              <br>
+              <img src="images/carrerasstripe.png" alt="" width="100%">
+              <br><br>
+
+              <div class="row">
+                <div class="col-lg-1">
+
+                </div>
+              <div class="col-lg-10">
+
+
+
+
+              <!-------prueba------->
+              <div class="">
+
+                <div class="" style="text-align: center;">
+                  <img src="images/headerpilotoaviador.png" alt="" width="90%">
+                </div>
+                <br><br>
+
+                <div class="row">
+                  <div class="col-12">
+
+                    <nav>
+                      <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+
+                        <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">
+                          <li>
+                            <img src="images/perfili.png" alt="" width="20%">
+                          </li>
+                          Perfil de Ingreso
+                        </a>
+
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                          <li>
+                            <img src="images/perfile.png" alt="" width="20%">
+                          </li>
+                          Requisitos de Ingreso
+                        </a>
+
+                        <a class="nav-item nav-link" id="nav-perfil-tab" data-toggle="tab" href="#nav-perfil" role="tab" aria-controls="nav-perfil" aria-selected="false">
+                          <li>
+                            <img src="images/plan.png" alt="" width="20%">
+                          </li>
+                          Plan de Estudios
+                        </a>
+
+                      </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+
+                      <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                              PERFIL DE INGRESO
+                            </p>
+                            <br>
+                            <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                              Facilidad de expresión verbal.
+                              <br><br>
+                              Habilidades para el pensamiento
+                              crítico, analítico y reflexivo.
+                              <br><br>
+                              Disposición para las relaciones
+                              interpersonales.
+                              <br><br>
+                              Realizar actividades de forma
+                              organizada.
+                              <br><br>
+                              Trabajar manualmente con diversos
+                              materiales.
+                              <br><br>
+                              Manejo de relaciones espaciales y
+                              observación.
+                              <br><br>
+                              Conocimientos de física y
+                              matemáticas.
+                            </p>
+                            <br>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+                        <div class="row">
+                          <div class="col-12">
+                            <br>
+                            <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                              REQUISITOS:
+                            </p><br>
+                            <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                              <b>></b> Acta de nacimiento (Original o Certificada).
+                              <br><br>
+                              <b>></b> Certificado de Bachillerato o equivalente.
+                              <br><br>
+                              <b>></b> 3 Fotografías tamaño infantil.
+                              <br><br>
+                              <b>></b> 2 Fotografías a color tamaño pasaporte.
+                              <br><br>
+                              <b>DAMAS:</b> cara despejada y arete pequeño, blusa blanca formal.
+                              <br><br>
+                              <b>CABALLEROS:</b> sin barba ni bigote, camisa blanca y corbata azul.
+                              <br><br>
+                              <b>></b> Examen médico realizado por SCT o Centro Autorizado (este documento la escuela lo solicitará al alumno).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="nav-perfil" role="tabpanel" aria-labelledby="nav-perfil-tab">
+
+                        <div class="row">
+                          <div class="col-12">
+                            <p style="color: white; background-color: #3bb7e7; font-size: 1.5rem;">RETÍCULA</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-3" style="text-align: center;">
+                            <p class="" style="color: #044972; text-align: center;">
+                              Aerodinámica I
+                              <br>
+                              Aeronaves y Motores I
+                              <br>
+                              Control de Tránsito Aéreo I
+                              <br>
+                              Historia y Evolución de la
+                              Industria Aeronáutica y la
+                              Aviación
+                              <br>
+                              Comunicación Oral y Escrita
+                              <br>
+                              Administración
+                            </p>
+                            <br><br>
+                          </div>
+                          <div class="col-lg-3" style="text-align: center;">
+                            <p class="" style="color: #044972; text-align: center;">
+                              Reglamentación Aérea
+                              <br>
+                              Telecomunicaciones Aeronáuticas
+                              <br>
+                              Navegación Aérea
+                              <br>
+                              Metereología I
+                              <br>
+                              Administración Estratégica
+                              <br>
+                              Herramientas Tecnológicas
+                            </p>
+                            <br><br>
+                          </div>
+                          <div class="col-lg-3" style="text-align: center;">
+                            <p class="" style="color: #044972; text-align: center;">
+                              Operaciones Aeronáuticas I
+                              <br>
+                              Inglés Técnico Aeronáutico I
+                              <br>
+                              Control de Tránsito Aéreo II
+                              <br>
+                              Navegación Aérea II
+                              <br>
+                              Formación de Emprededores
+                              <br>
+                              Ética y Valores
+                            </p>
+                            <br><br>
+                          </div>
+                          <div class="col-lg-3" style="text-align: center;">
+                            <p class="" style="color: #044972; text-align: center;">
+                              Aerodinámica II
+                              <br>
+                              Aeronaves y Motores II
+                              <br>
+                              Meteorología II
+                              <br>
+                              Reglamentación Aérea II
+                              <br>
+                              Comunicación Organizacional
+                              <br>
+                              Emprendimiento e Innovación
+                            </p>
+                            <br><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <p class="" style="color: #044972; text-align: center;">
+                              Operaciones Aeronáuticas II
+                              <br>
+                              Seguridad Aérea
+                              <br>
+                              Navegación Aérea III
+                              <br>
+                              Radiotelefonista Restringido Aéreo
+                              <br>
+                              Relaciones Públicas
+                              <br>
+                              Responsabilidad Social y Desarrollo Sustentable
+                            </p>
+                            <br><br>
+                          </div>
+
+                          <div class="col-lg-3" style="text-align: center;">
+                            <p class="" style="color: #044972; text-align: center;">
+                              Operaciónes de Líneas Aéreas Ejecutivas y Comerciales
+                              <br>
+                              Derecho Aeronaútico
+                              <br>
+                              Medicina Básica en Aviación
+                              <br>
+                              Administración de Empresas Aéreas
+                              <br>
+                              Inglés Técnico Aeronáutico II
+                              <br>
+                              Conocimiento Cultral y Geográfico
+                            </p>
+                            <br><br>
+                          </div>
+                          <div class="col-lg-3" style="text-align: center;">
+                            <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">Optativas</p>
+                            <p class="" style="color: #044972; text-align: center;">
+                              Administración
+                              <br>
+                              Relaciones Públicas
+                              <br>
+                              Derecho Aeronaútico
+                              <br>
+                              Formación de Instructores
+                            </p>
+                            <br><br>
+                          </div>
+                          <div class="col-lg-3">
+                            <p class="rightlefttspace" style="color: grey; text-align: center; border-left-style: dotted; border-color: grey; border-width: 1px;">
+                              Número mínimo de horas que se deberán acreditar en las asignaturas optativas, bajo la conducción de un docente: <b>80</b>
+                            </p>
+                            <br><br>
+                            <p class="rightlefttspace" style="color: grey; text-align: center; border-left-style: dotted; border-color: grey; border-width: 1px;">
+                              Número mínimo de créditos que se deberán acreditar en las asignaturas optativas: <b>10</b>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br><br><br>
+              </div>
+
+            </div>
+  <div class="col-lg-1">
+
+  </div>
+
+            </div>
+
+            </div>
+
+
+            <div class=" tab-pane fade" id="nav-mtto" role="tabpanel" aria-labelledby="nav-mtto-tab">
+
+              <br>
+              <img src="images/carrerasstripe.png" alt="" width="100%">
+              <br><br>
+
+              <div class="row">
+                <div class="col-lg-1">
+
+                </div>
+              <div class="col-lg-10">
+
+              <!-------prueba------->
+              <div class="">
+
+                <div class="" style="text-align: center;">
+                  <img src="images/headermantto.png" alt="" width="90%">
+                </div>
+                <br><br><br>
+
+                <nav>
+                  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home2-tab" data-toggle="tab" href="#nav-home2" role="tab" aria-controls="nav-home2" aria-selected="true">
+                      <li>
+                        <img src="images/lapiz.png" alt="" width="20%">
+                      </li>
+                      Objetivo
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-profile2-tab" data-toggle="tab" href="#nav-profile2" role="tab" aria-controls="nav-profile2" aria-selected="false">
+                      <li>
+                        <img src="images/perfili.png" alt="" width="20%">
+                      </li>
+                      Perfil de Ingreso
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-contact2-tab" data-toggle="tab" href="#nav-contact2" role="tab" aria-controls="nav-contact2" aria-selected="false">
+                      <li>
+                        <img src="images/perfile.png" alt="" width="20%">
+                      </li>
+                      Perfil de Egreso
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-perfil2-tab" data-toggle="tab" href="#nav-perfil2" role="tab" aria-controls="nav-perfil2" aria-selected="false">
+                      <li>
+                        <img src="images/plan.png" alt="" width="20%">
+                      </li>
+                      Plan de Estudios
+                    </a>
+
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+
+                  <div class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home2-tab">
+                    <div class="row">
+                      <div class="col-12">
+                        <p style="color: #044972; text-align: justify;">
+                          Formar profesionales altamente capacitados que se desempeñen en las áreas de la aeronáutica relacionadas
+                          con la fabricación, operación y mantenimiento de aeronaves así como de los sistemas de las mismas, tomando
+                          en cuenta los procedimientos establecidos y contemplando los más altos índices de seguridad por medio
+                          de una preparación sólida. </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile2-tab">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                          PERFIL DE INGRESO
+                        </p>
+                        <br>
+                        <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                          <b>></b> Facilidad de expresión verbal
+                          <br><br>
+                          <b>></b> Habilidades para el pensamiento crítico, analítico y reflexivo
+                          <br><br>
+                          <b>></b> Disposición para las relaciones interpersonales
+                          <br><br>
+                          <b>></b> Realizar actividades de forma organizada
+                          <br><br>
+                          <b>></b> Trabajar manualmente con diversos materiales
+                          <br><br>
+                          <b>></b> Manejo de relaciones espaciales y observación
+                          <br><br>
+                          <b>></b> Conocimientos de física y matemáticas
+                        </p>
+                        <br><br>
+
+                        <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                          REQUISITOS DE INGRESO<br>(Original y 2 Copias)
+                        </p>
+                        <br>
+                        <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                          <b>></b> Acta de nacimiento (Original o Certificada)
+                          <br><br>
+                          <b>></b> Certificado de Bachillerato o equivalente
+                          <br><br>
+                          <b>></b> 3 Fotografías tamaño infantil
+                          <br><br>
+                          <b>></b> 2 Fotografías a color tamaño pasaporte:
+                          <br><br>
+                          <b>DAMAS:</b> cara despejada y arete pequeño, blusa blanca formal.
+                          <br><br>
+                          <b>CABALLEROS:</b> sin barba ni bigote, camisa blanca y corbata azul.
+                          <br><br>
+                          <b>></b> Examen médico realizado por SCT o Centro Autorizado (este documento la escuela lo solicitará al alumno).
+                        </p>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab">
+
+                    <div class="row">
+                      <div class="col-12">
+                        <br>
+                        <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                          CRÉDITOS AL FINAL DEL ADIESTRAMIENTO
+                        </p><br>
+                        <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                          Curso con valor curricular, certificado de estudios, diploma (solo obteniendo una calificación
+                          mínima de <b>80</b>), licencia correspondiente expedida por la Agencia Federal de Aviación Civil.
+                        </p><br><br>
+                        <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                          <b>></b> Al finalizar la carrera el alumno contará con conocimientos en: Teorías de y fundamentos de Aeronaútica,
+                          Metereología, Mecánica, Electricidad, Sistemas de planeador, Electrónica y Sistemas de Motor.
+                          <br><br>
+                          <b>></b> Comportamiento de los diferentes instrumentos, momentos y efectos que actúan sobre la aeronave.
+                          <br><br>
+                          <b>></b> Manuales de Aviación y Sistemas de Avionic´s.
+                          <br><br>
+                          <b>></b> Gestión de Seguridad para la Aviación Civil.
+                          <br><br>
+                          <b>></b> Sistemas Propios de la Aeronáutica.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="tab-pane fade" id="nav-perfil2" role="tabpanel" aria-labelledby="nav-perfil2-tab">
+
+                    <div class="row">
+                      <div class="col-12">
+                        <p style="color: white; background-color: #3bb7e7; font-size: 1.5rem;">RETÍCULA</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Comunicación Oral y Escrita
+                          <br>
+                          Electricidad I
+                          <br>
+                          Entorno Aeronáutico
+                          <br>
+                          Aerodinámica
+                          <br>
+                          Fisica
+                          <br>
+                          Matemáticas
+                          <br>
+                          Sistemas de la Aeronave
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Programas de Mantenimiento
+                          <br>
+                          Electricidad para Aeronaves de Ala Fija
+                          <br>
+                          Sistema de Combustible de las Aeronaves
+                          <br>
+                          Estructuras I
+                          <br>
+                          Instrumentos de Cabina
+                          <br>
+                          Motores para Aeronaves I
+                          <br>
+                          Motores Turboreactores para Aeronaves I
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Herramientas Tecnológicas
+                          <br>
+                          Electricidad para Aeronaves de Ala Rotativa
+                          <br>
+                          Sistema Hidraulico de las Aeronaves
+                          <br>
+                          Estructuras II Ala Fija
+                          <br>
+                          Tecnología de los Materiales de Aeronaves I
+                          <br>
+                          Motores para Aeronaves II
+                          <br>
+                          Motores Turboreactores para Aeronaves II
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Seguridad Industrial
+                          <br>
+                          Sistema de Avionics de las Aeronaves
+                          <br>
+                          Sistema de Protección de Hielo y Lluvia
+                          <br>
+                          Estructuras II Ala Rotativa
+                          <br>
+                          Tecnología de los Materiales de Aeronaves II
+                          <br>
+                          Motores para Aeronaves III
+                          <br>
+                          Motores Turboreactores para Aeronaves III
+                          <br>
+                          Practicas Estandar de Mantenimiento I
+                        </p>
+                        <br><br>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Pensamiento Crítico
+                          <br>
+                          Sistema de Control de Vuelo
+                          <br>
+                          Electronica para Aeronaves de Ala Fija I
+                          <br>
+                          Factores Humanos
+                          <br>
+                          Inglés Técnico Aeronaútico I
+                          <br>
+                          Interpretación y Manejo de Manuales
+                          <br>
+                          Electronica para Aeronaves de Ala Rotativa I
+                          <br>
+                          Prácticas Estandar de Mantenimiento II
+                        </p>
+                        <br><br>
+                      </div>
+
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Etica y Valores
+                          <br>
+                          Sistemas Complementarios de las Aeronaves
+                          <br>
+                          Electronica para Aeronaves de Ala Fija II
+                          <br>
+                          Sistemas de Calidad
+                          <br>
+                          Inglés Técnico Aeronaútico II
+                          <br>
+                          Legislación Aeronaútica
+                          <br>
+                          Electronica para Aeronaves de Ala Rotativa II
+                          <br>
+                          Prácticas Estandar de Mantenimiento III
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">Optativas</p>
+                        <p class="" style="color: #044972; text-align: center;">
+                          Administración
+                          <br>
+                          Relaciones Públicas
+                          <br>
+                          Introducción al Diseño de Aeronaves
+                          <br>
+                          Formación de Instructores
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3">
+                        <p class="rightlefttspace" style="color: grey; text-align: center; border-left-style: dotted; border-color: grey; border-width: 1px;">
+                          Número mínimo de horas que se deberán acreditar en las asignaturas optativas, bajo la conducción de un docente: <b>80</b>
+                        </p>
+                        <br><br>
+                        <p class="rightlefttspace" style="color: grey; text-align: center; border-left-style: dotted; border-color: grey; border-width: 1px;">
+                          Número mínimo de créditos que se deberán acreditar en las asignaturas optativas: <b>10</b>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <br><br><br>
+              </div>
+
+            </div>
+  <div class="col-lg-1">
+
+  </div>
+
+            </div>
+
+
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-operaciones" role="tabpanel" aria-labelledby="nav-operaciones-tab">
+
+              <br>
+              <img src="images/carrerasstripe.png" alt="" width="100%">
+              <br><br>
+
+              <div class="row">
+                <div class="col-lg-1">
+
+                </div>
+              <div class="col-lg-10">
+
+              <!-------prueba------->
+              <div class="">
+
+                <div class="" style="text-align: center;">
+                  <img src="images/headeroficial de operaciones.png" alt="" width="90%">
+                </div>
+                <br><br><br>
+
+                <nav>
+                  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home3-tab" data-toggle="tab" href="#nav-home3" role="tab" aria-controls="nav-home3" aria-selected="true">
+                      <li>
+                        <img src="images/lapiz.png" alt="" width="20%">
+                      </li>
+                      Objetivo
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-profile3-tab" data-toggle="tab" href="#nav-profile3" role="tab" aria-controls="nav-profile3" aria-selected="false">
+                      <li>
+                        <img src="images/perfili.png" alt="" width="20%">
+                      </li>
+                      Perfil de Ingreso
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-contact3-tab" data-toggle="tab" href="#nav-contact3" role="tab" aria-controls="nav-contact3" aria-selected="false">
+                      <li>
+                        <img src="images/perfile.png" alt="" width="20%">
+                      </li>
+                      Perfil de Egreso
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-perfil3-tab" data-toggle="tab" href="#nav-perfil3" role="tab" aria-controls="nav-perfil3" aria-selected="false">
+                      <li>
+                        <img src="images/plan.png" alt="" width="20%">
+                      </li>
+                      Plan de Estudios
+                    </a>
+
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+
+                  <div class="tab-pane fade show active" id="nav-home3" role="tabpanel" aria-labelledby="nav-home3-tab">
+                    <div class="row">
+                      <div class="col-12">
+                        <p style="color: #044972; text-align: justify;">
+                          <b>></b> Formar profesionales altamente
+                          capacitados que se desempeñen en las áreas
+                          de la aeronáutica relacionadas con la
+                          planificación y operación, en tierra, de un
+                          vuelo.
+                          <br><br>
+                          <b>></b> Capacitar a los alumnos en administración,
+                          manejo y operación de los aeropuertos y
+                          helipuertos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-profile3" role="tabpanel" aria-labelledby="nav-profile3-tab">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                          PERFIL DE INGRESO
+                        </p>
+                        <br>
+                        <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                          <b>></b> Facilidad de expresión verbal.
+                          <br><br>
+                          <b>></b> Habilidades para el pensamiento crítico,
+                          analítico y reflexivo.
+                          <br><br>
+                          <b>></b> Disposición para las relaciones
+                          interpersonales.
+                          <br><br>
+                          <b>></b> Trabajar manualmente con diversos
+                          materiales.
+                          <br><br>
+                          <b>></b> Conocimientos de física y matemáticas.
+                          <br><br>
+                          <b>></b> Alto nivel de tolerancia al trabajo bajo
+                          presión.
+                        </p>
+                        <br><br>
+
+                        <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                          REQUISITOS DE INGRESO<br>(Original y 2 Copias)
+                        </p>
+                        <br>
+                        <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                          <b>></b> Acta de nacimiento (Original o Certificada)
+                          <br><br>
+                          <b>></b> Certificado de Bachillerato o equivalente
+                          <br><br>
+                          <b>></b> 3 Fotografías tamaño infantil
+                          <br><br>
+                          <b>></b> 2 Fotografías a color tamaño pasaporte:
+                          <br><br>
+                          <b>DAMAS:</b> cara despejada y arete pequeño, blusa blanca formal.
+                          <br><br>
+                          <b>CABALLEROS:</b> sin barba ni bigote, camisa blanca y corbata azul.
+                          <br><br>
+                          <b>></b> Examen médico realizado por SCT o Centro Autorizado (este documento la escuela lo solicitará al alumno).
+                        </p>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="nav-contact3-tab">
+
+                    <div class="row">
+                      <div class="col-12">
+                        <br>
+                        <p class="rightlefttspace" style="color: #3bb7e7; text-align: justify;">
+                          CRÉDITOS AL FINAL DEL ADIESTRAMIENTO
+                        </p><br>
+                        <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                          Curso con valor curricular, certificado de estudios, diploma (solo obteniendo una calificación
+                          mínima de <b>80</b>), licencia correspondiente expedida por la Agencia Federal de Aviación Civil.
+                        </p><br><br>
+                        <p class="rightlefttspace" style="color: #044972; text-align: justify;">
+                          <b>></b> Al finalizar la carrera el alumno contará con conocimientos en: Teorías y fundamentos sobre
+                          Aerodinámica, Meteorología, Navegación Aérea, Operaciones Aeronáuticas, telecomunicaciones,
+                          Control de Tránsito Aéreo, Aeropuertos, helipuertos y prácticas de Operaciones aeronáuticas.
+                          <br><br>
+                          <b>></b> Conocer los Tipos de aeropuertos y helipuertos.
+                          <br><br>
+                          <b>></b> Comprender la operatividad y ejecución de leyes, reglamentos, códigos y demás documentos del
+                          sistema de aviación.
+                          <br><br>
+                          <b>></b> Gestión de la Seguridad para la aviación civil.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="tab-pane fade" id="nav-perfil3" role="tabpanel" aria-labelledby="nav-perfil3-tab">
+
+                    <div class="row">
+                      <div class="col-12">
+                        <p style="color: white; background-color: #3bb7e7; font-size: 1.5rem;">RETÍCULA</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Aerodinámica I
+                          <br>
+                          Aeropuertos I
+                          <br>
+                          Operaciones Aeronáuticas I
+                          <br>
+                          Administración
+                          <br>
+                          Contabilidad
+                          <br>
+                          Comunicación Oral y Escrita
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Aeronaves y Motores I
+                          <br>
+                          Helipuertos
+                          <br>
+                          Meteorología I
+                          <br>
+                          Reglamentación Aérea I
+                          <br>
+                          Inglés Técnico Aeronáutico I
+                          <br>
+                          Administración Estratégica
+                          <br>
+                          Herramientas Tecnológicas
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Telecomunicaciones Aeronáuticas
+                          <br>
+                          Control de Tránsito Aéreo I
+                          <br>
+                          Navegación Aérea
+                          <br>
+                          Aeropuertos II
+                          <br>
+                          Operaciones Aeronáuticas II
+                          <br>
+                          Seguridad Aérea
+                          <br>
+                          Ética y Valores
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Aerodinámica II
+                          <br>
+                          Meteorología II
+                          <br>
+                          Aeronaves y Motores II
+                          <br>
+                          Sistema de Gestión de Seguridad Operacional (SMS)
+                          <br>
+                          Inglés Técnico Aeronáutico II
+                          <br>
+                          Control de Tránsito Aéreo II
+                          <br>
+                          Emprendimiento e Innovación
+                        </p>
+                        <br><br>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Radiotelefonista Restringido Aéreo (RTAR)
+                          <br>
+                          Mercancías Peligrosas
+                          <br>
+                          Administración de Empresas Aéreas
+                          <br>
+                          Derecho Internacional Privado
+                          <br>
+                          Comunicación Organizacional
+                          <br>
+                          Responsabilidad Social y Desarrollo Sustentable
+                        </p>
+                        <br><br>
+                      </div>
+
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p class="" style="color: #044972; text-align: center;">
+                          Factores Humanos (DRM)
+                          <br>
+                          Medicina Básica en Aviación
+                          <br>
+                          Operaciónes de Líneas Aéreas Ejecutivas y Comerciales
+                          <br>
+                          Derecho Internacional Público
+                          <br>
+                          Relaciones Públicas
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3" style="text-align: center;">
+                        <p style="color: white; background-color: #3bb7e7; font-size: 1.2rem;">Optativas</p>
+                        <p class="" style="color: #044972; text-align: center;">
+                          Dirección Estratégica de Empresas de
+                          Transporte Aéreo
+                          <br>
+                          Relaciones Públicas
+                          <br>
+                          Derecho Aeronáutico
+                          <br>
+                          Formación de Instructores
+                        </p>
+                        <br><br>
+                      </div>
+                      <div class="col-lg-3">
+                        <p class="rightlefttspace" style="color: grey; text-align: center; border-left-style: dotted; border-color: grey; border-width: 1px;">
+                          Número mínimo de horas que se deberán acreditar en las asignaturas optativas, bajo la conducción de un docente: <b>80</b>
+                        </p>
+                        <br><br>
+                        <p class="rightlefttspace" style="color: grey; text-align: center; border-left-style: dotted; border-color: grey; border-width: 1px;">
+                          Número mínimo de créditos que se deberán acreditar en las asignaturas optativas: <b>10</b>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <br><br><br>
+              </div>
+
+
+            </div>
+  <div class="col-lg-1">
+
+  </div>
+
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #007bff;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <div class="formato-izq footer-logo col-lg-6 col-md-12"><img src="images/logo-white.png" alt="EAV-logo" height="100"></div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <h6 class="mb-0" style="color: white;">Siguenos en nuestras redes sociales</h6>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/EAVLicenciaturas/" class="social-icon fab fa-facebook-f fa-lg"></a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/aeronauticaeav" class="social-icon fab fa-twitter fa-lg"></a>
+            <!-- Instagram-->
+            <a href="https://www.instagram.com/aeronautica_eav/" class="social-icon fab fa-instagram fa-lg"></a>
+            <!--Envelope-->
+            <a href="mailto:info@eav.edu.mx" class="social-icon fas fa-envelope fa-lg"></a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="historia.html">Historia</a>
+          </p>
+          <p>
+            <a href="filosofia.html">Filosofia Institucional</a>
+          </p>
+          <p>
+            <a href="instalaciones.html">Instalaciones</a>
+          </p>
+          <p>
+            <a href="reglamento.html">Reglamento</a>
+          </p>
+          <p>
+            <a href="privacidad.html">Aviso de privacidad</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">Oferta Académica</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="TSU.html">Tecnico Superior Universitario (TSU)</a>
+          </p>
+          <p>
+            <a href="licenciaturas.html">Licenciaturas</a>
+          </p>
+          <p>
+            <a href="maestrias.html">Maestrias</a>
+          </p>
+          <p>
+            <a href="especialidades.html">Especialidades</a>
+          </p>
+          <p>
+            <a href="cursos-especiales.html">Cursos Especiales</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">links de interés</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="informacion.html">Información</a>
+          </p>
+          <p>
+            <a href="vida-universitaria.html">Vida Universitaria</a>
+          </p>
+          <p>
+            <a href="practicas.html">Prácticas</a>
+          </p>
+          <p>
+            <a href="vinculacion.html">Vinculación con empresas</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <i class="fas fa-home mr-3"></i> Antonio de Mendoza #204 Boca del Rio, Veracruz</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@eav.edu.mx</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> (229) 200 02 33</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © Centro Universitario EAV      <img src="images/SEP logo.png" alt="" width="10%"> <p style="color:white;">Eduardo Rodriguez</p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+
+  </body>
+
+  </html>

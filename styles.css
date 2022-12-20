@@ -1,0 +1,1021 @@
+body{
+  font-family: 'Montserrat' sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+.titulos{
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.encuentra-titulo{
+  text-align: center;
+  padding-bottom: 5%;
+  color: #007bff;
+}
+
+.encuentra-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.contacta-titulo{
+  text-align: center;
+  padding-bottom: 5%;
+  color: #007bff;
+}
+
+.hotsale{
+  background-image: url("images/hotsalebg.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.lic{
+  background-image: url("images/landsky.jpg");
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.oferta-iconos{
+  background-color: white;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+.fondolanding{
+  padding-top: 165px;
+  background-image: url("images/fondolanding.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 500px) {
+  .fondolanding  {
+    padding-top: 32px;
+    background-image: url("images/fondolanding1.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+}
+
+.imgcampus{
+  background: transparent;
+  width: 60%;
+}
+
+@media screen and (max-width: 500px) {
+  .imgcampus  {
+    background: transparent;
+    width: 100%;
+  }
+}
+
+.botonfijo{
+  width: 10%;
+  background: transparent;
+  position:fixed;
+  bottom: 15px;
+  left: 10px;
+  z-index:97;
+}
+
+@media screen and (max-width: 500px) {
+  .botonfijo{
+    width: 30%;
+    background: transparent;
+    position:fixed;
+    bottom: 15px;
+    left: 10px;
+    z-index:97;
+  }
+}
+
+
+.fondoformulario{
+  background-image: url("images/111-fondoformulario.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondoformulario1{
+  background-image: url("images/111-fondoformulario2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-image{
+  height: 3rem;
+}
+
+.nav-item{
+  padding: 0 20px;
+}
+
+.nav-link{
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.eav-text{
+  text-align: left;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#title {
+  color: #fff;
+}
+
+.container-fluid{
+
+}
+
+.big-heading{
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 2.5rem 0rem 1.5rem 0rem;
+  color: #34a7df;
+}
+
+.title-img{
+  width: 100%;
+  padding-top: 2.5rem;
+}
+
+.fixed-bg {
+  background-image: url("images/tecnico.jpg");
+  min-height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-encuentranos {
+  background-image: url("images/tecnico1.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-campus {
+  background-image: url("images/tecnico.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-plataforma {
+  background-image: url("images/plataforma.png");
+  min-height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-tsu {
+  background-image: url("images/TSU-encabezado.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-licenciatura {
+  background-image: url("images/licenciatura-encabezado.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-maestria {
+  background-image: url("images/maestria-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-especialidad {
+  background-image: url("images/especialidad-encabezado.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-historia {
+  background-image: url("images/historia-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-privacidad {
+  background-image: url("images/privacidad-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-filosofia {
+  background-image: url("images/filosofia-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-reglamento {
+  background-image: url("images/reglamento-encabezado.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-instalaciones {
+  background-image: url("images/instalaciones-encabezado.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-directorio {
+  background-image: url("images/directorio-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-escolar {
+  background-image: url("images/escolar-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-servicio {
+  background-image: url("images/serviciosoc-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-titulacion {
+  background-image: url("images/titulacion-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-colaboraciones {
+  background-image: url("images/colaboraciones-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-pagos {
+  background-image: url("images/pagos-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-calendario {
+  background-image: url("images/calendario-encabezado.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-tramites {
+  background-image: url("images/tramites-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-becas {
+  background-image: url("images/becas-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-faq {
+  background-image: url("images/faq-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-informacion {
+  background-image: url("images/informacion-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-vinculacion {
+  background-image: url("images/vinculacion-encabezado.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-practicas {
+  background-image: url("images/practicas-encabezado.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-vidauniversitaria {
+  background-image: url("images/vidauniversitaria-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-cursosespeciales {
+  background-image: url("images/cursosespeciales-encabezado.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#features{
+  padding-top: 7%;
+  background-color: #fff;
+}
+
+.feature-title{
+  font-size: 1.5rem;
+}
+
+.icon{
+  color: #79C0FF;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  color: #007bff;
+}
+
+.oferta{
+  background-image: url("images/take-off.jpg");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 6rem;
+}
+
+#oferta-educativa{
+  background-color: #fff;
+}
+
+.cards{
+  border-left: 10px;
+}
+
+.updownspace{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.rightlefttspace{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.contacto{
+  padding: 2%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto
+}
+
+/*-------------GALERIA-------------------*/
+#demo {
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+
+.green{
+  background-color:#6fb936;
+}
+        .thumb{
+            margin-bottom: 30px;
+        }
+
+        .page-top{
+            margin-top:85px;
+        }
+
+
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+
+.transition {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+    .modal-header {
+
+     border-bottom: none;
+}
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+      display:none;
+    }
+
+/*-------------GALERIA-----------------------------*/
+
+
+/* enable grayscale on hover */
+.grayscale:hover {
+  filter: brightness(90%); /* IE6-9 */
+  -webkit-filter: brightness(90%); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+#footer{
+  color: #fff;
+  background-color: #007bff;
+}
+
+.formato-derecha{
+  text-align: right;
+}
+
+.formato-izq{
+  text-align: left;
+}
+
+.social-icon{
+  margin: 20px 10px;
+  color: #fff;
+}
+
+.footer-text{
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-logo{
+  margin-top: 20px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #007bff;
+  color: white;
+}
+
+.twitter {
+  background: #007bff;
+  color: white;
+}
+
+.google {
+  background: #007bff;
+  color: white;
+}
+
+.linkedin {
+  background: #007bff;
+  color: white;
+}
+
+.youtube {
+  background: #007bff;
+  color: white;
+}
+
+.round-corners {
+  border-radius: 25px;
+  background: #eebb36;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+/* Animate Title */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeRightLeft {
+    from {
+        transform: translate3d(40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeRightLeft {
+    from {
+        transform: translate3d(40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeLeftRight {
+    from {
+        transform: translate3d(-40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeLeftRight {
+    from {
+        transform: translate3d(-40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeRightLeft {
+    opacity: 0;
+    animation-name: fadeRightLeft;
+    -webkit-animation-name: fadeRightLeft;
+}
+
+.fadeLeftRight {
+    opacity: 0;
+    animation-name: fadeLeftRight;
+    -webkit-animation-name: fadeLeftRight;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
+
+nav > div a.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #3bb7e7 ;
+}
+.tab-content{
+  background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #3b90e7;
+    border-bottom:5px solid #3b90e7;
+    padding:30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: #3bb7e7;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+
+.shadoww {
+  box-shadow: 10px 10px 5px grey;
+}
+
+
+
+<!------------FAQ------------>
+
+h2 {
+    font-family: Arial, Verdana;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #091f2f;
+    text-transform: uppercase;
+}
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-size: 1.5rem;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}
+
+
+<!---------FAQ END ------------>
+
+
+.imgcampus{
+  width: 75%;
+}
+
+@media (max-width: 600px) {
+  #carrusel {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .fixed-bg-campus  {
+    min-height: 200px;
+  }
+
+  .fixed-bg-tsu {
+    min-height: 200px;
+  }
+
+  .fixed-bg-licenciatura {
+    min-height: 200px;
+  }
+
+  .fixed-bg-maestria {
+    min-height: 200px;
+  }
+
+  .fixed-bg-especialidad {
+    min-height: 200px;
+  }
+
+  .fixed-bg-especialidad {
+    min-height: 200px;
+  }
+
+  .fixed-bg-historia {
+    min-height: 200px;
+  }
+
+  .fixed-bg-privacidad {
+    min-height: 200px;
+  }
+
+  .fixed-bg-filosofia {
+    min-height: 200px;
+  }
+
+  .fixed-bg-reglamento {
+    min-height: 200px;
+  }
+
+  .fixed-bg-instalaciones {
+    min-height: 200px;
+  }
+
+  .fixed-bg-directorio {
+    min-height: 200px;
+  }
+
+  .fixed-bg-escolar {
+    min-height: 200px;
+  }
+
+  .fixed-bg-servicio {
+    min-height: 200px;
+  }
+
+  .fixed-bg-titulacion {
+    min-height: 200px;
+  }
+
+  .fixed-bg-pagos {
+    min-height: 200px;
+  }
+
+  .fixed-bg-calendario {
+    min-height: 200px;
+  }
+
+  .fixed-bg-tramites {
+    min-height: 200px;
+  }
+
+  .fixed-bg-becas {
+    min-height: 200px;
+  }
+
+  .fixed-bg-faq {
+    min-height: 200px;
+  }
+
+  .fixed-bg-informacion {
+    min-height: 200px;
+  }
+
+  .fixed-bg-vinculacion {
+    min-height: 200px;
+  }
+
+  .fixed-bg-practicas {
+    min-height: 200px;
+  }
+
+  .fixed-bg-vidauniversitaria {
+    min-height: 200px;
+  }
+
+  .fixed-bg-cursosespeciales {
+    min-height: 200px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .imgcampus  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .fixed-bg  {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .fixed-bg  {
+    min-height: 200px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .hot-sale  {
+    background-image: url("images/hotsalevert.jpg");
+    width: 100%;
+    background-position: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .lic  {
+    background-image: url("images/landsky.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .eav-text {
+    text-align: center;
+    line-height: 2;
+    font-size: 1.5rem;
+  }
+}
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EAV</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189911770-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-189911770-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '404249573788427');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=404249573788427&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5971de0086.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!---TIDIO------>
+  <script src="//code.tidio.co/8wwajboqwkkwhbirnokyo3ebst7bsruc.js" async></script>
+  <!---TIDIO------>
+
+</head>
+
+<body>
+
+  <header class="navigation">
+
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white navbar-primary">
+
+      <a class="navbar-brand py-0" href="index.html"><img class="logo-image" id="logo" src="images/logo-prueba.png" alt=""></a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i id="toggle-bars" class="fas fa-bars" style="color:#007bff; font-size:28px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Acerca de
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="filosofia.html">Filosofia Institucional</a></li>
+              <li><a class="dropdown-item" href="instalaciones.html">Instalaciones</a></li>
+        <!----      <a class="dropdown-item" href="directorio.html">Directorio</a> ------>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="licenciaturas.html">Normatividad Institucional</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="reglamento-general-universitario.html">Reglamento General Universitario</a></li>
+                  <li><a class="dropdown-item" href="aprendizaje-modelo-hibrido.html">Aprendizaje en Modelo Híbrido</a></li>
+                  <li><a class="dropdown-item" href="reglamento-operacion-educacion-linea.html">Reglas de Operación de Educación en Línea</a></li>
+                  <li><a class="dropdown-item" href="reglamento-interno-personal-aeronautico.html">Reglamento Interno para Personal Técnico Aeronáutico</a></li>
+                  <li><a class="dropdown-item" href="manual-practica-vuelo.html">Manual de Prácticas de Vuelo Real y Simulado</a></li>
+                  <li><a class="dropdown-item" href="lineamientos-generales-funcion-docente.html">Lineamientos Genrales de la Función Docente</a></li>
+                  <li><a class="dropdown-item" href="reglamento-alumno.html">Reglamento del Alumno</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Oferta Académica
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="TSU.html">Técnico Superior Universitario (TSU)</a></li>
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Licenciaturas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="LASGA.html">LASGA</a></li>
+                  <li><a class="dropdown-item" href="lic-administracion.html">Administración</a></li>
+                  <li><a class="dropdown-item" href="lic-comercio-int.html">Comercio Internacional</a></li>
+                  <li><a class="dropdown-item" href="lic-derecho.html">Derecho</a></li>
+                  <li><a class="dropdown-item" href="lic-educacion.html">Educación</a></li>
+                  <li><a class="dropdown-item" href="lic-mercadotecnia.html">Mercadotecnia</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="maestrias.html">Maestrias</a></li>
+              <li><a class="dropdown-item" href="especialidades.html">Especialidades</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Carreras Técnicas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="curso-mantenimiento.html">Técnico en Mantenimiento</a>
+              <a class="dropdown-item" href="curso-oficialoperaciones.html">Oficial de Operaciones</a>
+              <a class="dropdown-item" href="curso-sobrecargo.html">Curso de Sobrecargo</a>
+              <a class="dropdown-item" href="curso-pilotopalafija.html">Piloto Privado Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotopalarotativa.html">Piloto Privado Ala Rotativa</a>
+              <a class="dropdown-item" href="curso-pilotocalafija.html">Piloto Comercial Ala Fija</a>
+              <a class="dropdown-item" href="curso-pilotocalarotativa.html">Piloto Comercial Ala Rotativa</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="campus.html">Campus</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios Escolares
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="servicio-social.html">Servicio Social</a>
+              <a class="dropdown-item" href="practicas.html">Prácticas</a>
+              <a class="dropdown-item" href="titulacion.html">Titulación</a>
+              <a class="dropdown-item" href="calendario.html">Calendario Escolar</a>
+              <a class="dropdown-item" href="colaboraciones.html">Colaboraciones</a>
+          <!----    <a class="dropdown-item" href="faq.html">Calificaciones</a> ----->
+              <a class="dropdown-item" href="becas.html">Becas</a>
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+            </div>
+          </li>
+      <!---    <li class="nav-item active dropdown">
+            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Trámites
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pagos.html">Pagos</a>
+              <a class="dropdown-item" href="pagos.html">Facturas</a>
+              <a class="dropdown-item" href="pagos.html">Constancias</a>
+            </div>
+          </li> ------>
+          <li class="nav-item active">
+            <a class="nav-link py-0" href="http://eav-superiores.com/moodle/">Plataforma Online</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!--Nav Bar-->
+
+  </header>
+
+
+  <section>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+    <div class="container-fluid container-xl fixed-bg-campus">
+      <div class="container-fluid container-xl encuentra-titulo updownspace animated animatedFadeInUp fadeInUp">
+        <h5 style="color: white;  padding-top: 10%;">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h5>
+        <h1 style="color: white;"><b>Campus</b></h1>
+      </div>
+    </div>
+
+    </div></div>
+
+  </section>
+
+
+
+
+
+  <section id="">
+
+          <nav>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-veracruz-tab" data-toggle="tab" href="#nav-veracruz" role="tab" aria-controls="nav-veracruz" aria-selected="true">Veracruz</a>
+              <a class="nav-item nav-link" id="nav-puebla-tab" data-toggle="tab" href="#nav-puebla" role="tab" aria-controls="nav-puebla" aria-selected="false">Puebla</a>
+              <a class="nav-item nav-link" id="nav-cdmx-tab" data-toggle="tab" href="#nav-cdmx" role="tab" aria-controls="nav-cdmx" aria-selected="false">CDMX</a>
+              <a class="nav-item nav-link" id="nav-monterrey-tab" data-toggle="tab" href="#nav-monterrey" role="tab" aria-controls="nav-monterrey" aria-selected="false">Monterrey</a>
+            </div>
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+
+            <!---------------------AQUI EMPIEZA VERACRUZ ---------------------------------------------->
+
+            <div class="rightlefttspace tab-pane fade show active" id="nav-veracruz" role="tabpanel" aria-labelledby="nav-veracruz-tab">
+
+              <div class="row updownspace">
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/vz.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace rightlefttspace" style="text-align: center; background-color: dodgerBlue; padding-top: 2%; padding-bottom: 2%;">
+                  <h3 class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Carreras Universitarias:</h3>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Licenciatura en Administración y Servicios Generales de Aviación <br>
+                    (Duración: 2 años 8 meses)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">TSU Piloto Aviador <br>
+                    (Duración: 2 años)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">TSU en Mantenimiento de Aeronaves <br>
+                    (Duración: 2 años)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">TSU Oficial de Operaciones de Aeronaves y Aeródromos <br>
+                    (Duración: 2 años)
+                  </li>
+                </div>
+
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace rightlefttspace" style="text-align: center; background-color: dodgerBlue; padding-top: 2%; padding-bottom: 2%;">
+                  <h3 class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Carreras técnicas:</h3>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Piloto Privado
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Piloto Comercial
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Sobrecargo de aviación
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Mantenimiento de Aeronaves
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Oficial de Operaciones
+                  </li>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeRightLeft imgcampus" src="images/vz1.png" alt="">
+                </div>
+
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <iframe class="animated animatedFadeInUp fadeLeftRight"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.6747944789945!2d-96.12190248578587!3d19.165707454128622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c3412526e5307b%3A0x3f8b46ac975563ab!2sEscuela%20de%20Aviaci%C3%B3n%20EAV!5e0!3m2!1ses!2smx!4v1590447622037!5m2!1ses!2smx"
+                    width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="text-align: center; background-color: dodgerBlue; padding-top: 2%; padding-bottom: 2%;">
+                  <h2 class="animated animatedFadeInUp fadeRightLeft" style="color: white; padding-top: 10%;">BASE VERACRUZ</h2>
+                  <p class="animated animatedFadeInUp fadeRightLeft" style="color: white;">
+                    Antonio de Mendoza #204 <br>
+                    Col. Virginia C.P. 94294 <br>
+                    Boca del Rio, Veracruz. <br>
+                    (229) 200 02 33 <br>
+                    INFO@EAV.EDU.MX
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;" >
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/campusver1.png" alt="" width="90%">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeRightLeft imgcampus" src="images/campusver.png" alt="" width="90%">
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <!---------------------AQUI EMPIEZA PUEBLA ---------------------------------------------->
+
+
+            <div class="rightlefttspace tab-pane fade" id="nav-puebla" role="tabpanel" aria-labelledby="nav-puebla-tab">
+
+              <div class="row updownspace">
+
+  <!---              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/puebla.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace rightlefttspace" style="text-align: center; background-color: dodgerBlue; padding-top: 2%; padding-bottom: 2%;">
+                  <h3 class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Carreras Universitarias:</h3>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Licenciatura en Administración y Servicios Generales de Aviación <br>
+                    (Duración: 2 años 8 meses)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">TSU Piloto Aviador <br>
+                    (Duración: 2 años)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">TSU en Mantenimiento de Aeronaves <br>
+                    (Duración: 2 años)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">TSU Oficial de Operaciones de Aeronaves y Aeródromos <br>
+                    (Duración: 2 años)
+                  </li>
+                </div>
+
+----->
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace rightlefttspace" style="text-align: center; background-color: dodgerBlue; padding-top: 2%; padding-bottom: 2%;">
+                  <h3 class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Carreras técnicas:</h3>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Piloto Privado
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Piloto Comercial
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Sobrecargo de aviación
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Mantenimiento de Aeronaves
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Oficial de Operaciones
+                  </li>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeRightLeft imgcampus" src="images/puebla1.png" alt="">
+                </div>
+
+
+
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <iframe class="animated animatedFadeInUp fadeLeftRight"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24657.175899085287!2d-98.20853768021257!3d18.98828205169786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf41e1d1f1d7%3A0xb2b3c4cdb8cd930f!2sBlvd.%20Valsequillo%208348%2C%20Quinta%20los%20Caprichos%2C%2072595%20Puebla%2C%20Pue.!5e0!3m2!1ses!2smx!4v1633963933042!5m2!1ses!2smx"
+                  width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="text-align: center; background-color: dodgerBlue; padding-top: 2%; padding-bottom: 2%;">
+                  <h2 class="animated animatedFadeInUp fadeRightLeft" style="color: white; padding-top: 10%;">BASE PUEBLA</h2>
+                  <p class="animated animatedFadeInUp fadeRightLeft" style="color: white;">
+                    Blvd. Valsequillo 8348  <br>
+                    Quinta los Caprichos C.P. 72595 <br>
+                    Puebla, Puebla. <br>
+                    (222) 573 60 61 Y 62 <br>
+                    INFO.PBC@EAV.EDU.MX
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/campuspuebla1.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeRightLeft imgcampus" src="images/campuspuebla2.png" alt="">
+                </div>
+
+              </div>
+
+            </div>
+
+
+              <!-------------------------AQUI EMPIEZA CDMX --------------------------------------------->
+
+
+
+           <div class="rightlefttspace tab-pane fade" id="nav-cdmx" role="tabpanel" aria-labelledby="nav-cdmx-tab">
+
+              <div class="row updownspace">
+
+    <!-----             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace rightlefttspace" style="text-align: center; background-color: dodgerBlue;">
+                  <h3 class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Carreras Universitarias:</h3>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">Licenciatura en Administración y Servicios Generales de Aviación <br>
+                    (Duración: 2 años 8 meses)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">TSU Piloto Aviador <br>
+                    (Duración: 2 años)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">TSU en Mantenimiento de Aeronaves <br>
+                    (Duración: 2 años)
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeLeftRight" style="color: white;">TSU Oficial de Operaciones de Aeronaves y Aeródromos <br>
+                    (Duración: 2 años)
+                  </li>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeRightLeft imgcampus" src="images/campuscdmx.png" alt="">
+                </div>
+
+----------------->
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/campuscdmx1.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace rightlefttspace" style="text-align: center; background-color: dodgerBlue;">
+                  <h3 class="animated animatedFadeInUp fadeRightLeft" style="color: white; padding-top: 5%;">Carreras técnicas:</h3>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Piloto Privado
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Piloto Comercial
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Sobrecargo de aviación
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Mantenimiento de Aeronaves
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Oficial de Operaciones
+                  </li>
+                </div>
+
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="text-align: center; background-color: dodgerBlue;">
+                  <h2 class="animated animatedFadeInUp fadeLeftRight" style="color: white; padding-top: 10%;">BASE CIUDAD DE MÉXICO</h2>
+                  <p class="animated animatedFadeInUp fadeLeftRight" style="color: white;">
+                    Blvd Puerto Aéreo #81 Piso 1 <br>
+                    Colonia Federal C.P. 15700 <br>
+                    CDMX <br>
+                    55 9003 6987 <br>
+                    INFO@EAV.EDU.MX
+                  </p>
+                  <br><br>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <iframe class="animated animatedFadeInUp fadeRightLeft"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6960238762709!2d-99.09563887080834!3d19.42173239918067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc1b693ea0fd%3A0x531a05bb78544adb!2sBlvd.%20Puerto%20A%C3%A9reo%20IEDF%20XII%2C%20Industrial%20Puerto%20A%C3%A9reo%2C%20Venustiano%20Carranza%2C%2015710%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1615914936322!5m2!1ses!2smx"
+                    width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+              </div>
+            </div>
+
+            <!---------------------AQUI EMPIEZA MTY ---------------------------------------------->
+
+            <div class="rightlefttspace tab-pane fade" id="nav-monterrey" role="tabpanel" aria-labelledby="nav-monterrey-tab">
+
+              <div class="row updownspace">
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/campusmty4.png" alt="">
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace rightlefttspace" style="text-align: center; background-color: #1e90ff;">
+                  <h2 class="animated animatedFadeInUp fadeRightLeft" style="color: white; padding-top: 5%;">CARRERAS TÉCNICAS:</h2>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Piloto Privado
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Piloto Comercial
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Oficial de Operaciones
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Sobrecargo de Aviación
+                  </li>
+                  <br>
+                  <li class="animated animatedFadeInUp fadeRightLeft" style="color: white;">Mantenimiento de Aeronaves
+                  </li>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="text-align: center; background-color: #007bff;">
+                  <h2 class="animated animatedFadeInUp fadeLeftRight" style="color: white; padding-top: 10%;">BASE MONTERREY</h2>
+                  <p class="animated animatedFadeInUp fadeLeftRight" style="color: white;">
+                    Calle Licenciado José Benitez #2307 <br>
+                    Colonia Chepevera C.P. 64060 <br>
+                    Monterrey, Nuevo Leon <br>
+                    (818) 340 1101 <br>
+                    INFO.MTY@EAV.EDU.MX
+                  </p>
+                  <br><br>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <iframe class="animated animatedFadeInUp fadeRightLeft"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14383.035761900739!2d-100.3471125!3d25.6792845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0aed8a3491683c1!2sEstudios%20Aeron%C3%A1uticos%20de%20Veracruz%20base%20Monterrey!5e0!3m2!1ses!2smx!4v1596563994626!5m2!1ses!2smx"
+                    width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/campusmty.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/campusmty1.png" alt="">
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/campusmty2.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 updownspace" style="padding-top: 2%; padding-bottom: 2%;">
+                  <img class="animated animatedFadeInUp fadeLeftRight imgcampus" src="images/campusmty3.png" alt="">
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #007bff;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <div class="formato-izq footer-logo col-lg-6 col-md-12"><img src="images/logo-white.png" alt="EAV-logo" height="100"></div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <h6 class="mb-0" style="color: white;">Siguenos en nuestras redes sociales</h6>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/EAVLicenciaturas/" class="social-icon fab fa-facebook-f fa-lg"></a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/aeronauticaeav" class="social-icon fab fa-twitter fa-lg"></a>
+            <!-- Instagram-->
+            <a href="https://www.instagram.com/aeronautica_eav/" class="social-icon fab fa-instagram fa-lg"></a>
+            <!--Envelope-->
+            <a href="mailto:info@eav.edu.mx" class="social-icon fas fa-envelope fa-lg"></a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">ESTUDIOS AERONÁUTICOS DE VERACRUZ</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="historia.html">Historia</a>
+          </p>
+          <p>
+            <a href="filosofia.html">Filosofia Institucional</a>
+          </p>
+          <p>
+            <a href="instalaciones.html">Instalaciones</a>
+          </p>
+          <p>
+            <a href="reglamento.html">Reglamento</a>
+          </p>
+          <p>
+            <a href="privacidad.html">Aviso de privacidad</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">Oferta Académica</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="TSU.html">Tecnico Superior Universitario (TSU)</a>
+          </p>
+          <p>
+            <a href="licenciaturas.html">Licenciaturas</a>
+          </p>
+          <p>
+            <a href="maestrias.html">Maestrias</a>
+          </p>
+          <p>
+            <a href="especialidades.html">Especialidades</a>
+          </p>
+          <p>
+            <a href="cursos-especiales.html">Cursos Especiales</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">links de interés</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <a href="informacion.html">Información</a>
+          </p>
+          <p>
+            <a href="vida-universitaria.html">Vida Universitaria</a>
+          </p>
+          <p>
+            <a href="practicas.html">Prácticas</a>
+          </p>
+          <p>
+            <a href="vinculacion.html">Vinculación con empresas</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <br>
+          <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border: 1px solid #007bff;">
+          <p>
+            <i class="fas fa-home mr-3"></i> Antonio de Mendoza #204 Boca del Rio, Veracruz</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@eav.edu.mx</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> (229) 200 02 33</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © Centro Universitario EAV       <img src="images/SEP logo.png" alt="" width="10%"> <p style="color:white;">Eduardo Rodriguez</p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+
+  </body>
+
+  </html>
